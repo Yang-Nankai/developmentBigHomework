@@ -15,12 +15,17 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+//test
+use app\models\EntryForm;
 
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
+    // 设置默认布局
+    public $layout = 'newMain';
+
     /**
      * {@inheritdoc}
      */
@@ -98,6 +103,33 @@ class SiteController extends Controller
         return $this->render('login', [
             'model' => $model,
         ]);
+    }
+
+    /**
+     * Test say hello!
+     * 
+     * @test
+     */
+    public function actionSay($message = 'Hello')
+    {
+        return $this->render('say', ['message' => $message]);
+    }
+
+    /**
+     * Test entry!
+     * 
+     * @test
+     */
+    public function actionEntry()
+    {
+        $model = new EntryForm;
+
+        if($model->load(Yii::$app->request->post())&&$model->validate()) {
+            return $this->render('entry-confirm', ['model' => $model]); 
+        }else {
+            // 无论是初始化显示还是数据验证错误
+            return $this->render('entry', ['model' => $model]);
+        }
     }
 
     /**
