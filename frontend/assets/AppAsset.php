@@ -38,7 +38,7 @@ class AppAsset extends AssetBundle
         'js/main.js',
         'js/owl.carousel.min.js',
         'js/slick.min.js',
-        'js/wow.min.js'
+        'js/wow.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

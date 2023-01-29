@@ -1,332 +1,17 @@
 <?php
 
 /** @var yii\web\View $this */
+use common\widgets\Alert;
+use frontend\assets\AppAsset;
+use yii\bootstrap5\Breadcrumbs;
+use yii\bootstrap5\Html;
 
-$this->title = 'My Yii Application';
+$this->title = 'Topic – Russia-Ukraine Conflict';
 ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bucker – Bakery Shop HTML Template</title>
-    <meta name="description"
-        content="240+ Best Bootstrap Templates are available on this website. Find your template for your project compatible with the most popular HTML library in the world." />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="canonical" href="Replace_with_your_PAGE_URL" />
-
-    <!-- Open Graph (OG) meta tags are snippets of code that control how URLs are displayed when shared on social media  -->
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Bucker –  Bakery Shop Bootstrap 5 Template" />
-    <meta property="og:url" content="PAGE_URL" />
-    <meta property="og:site_name" content="Bucker –  Bakery Shop Bootstrap 5 Template" />
-    <!-- For the og:image content, replace the # with a link of an image -->
-    <meta property="og:image" content="#" />
-    <meta property="og:description" content="Bucker –  Bakery Shop Bootstrap 5 Template" />
-
-    <!-- Add site Favicon -->
-    <link rel="icon" href="https://hasthemes.com/wp-content/uploads/2019/04/cropped-favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="https://hasthemes.com/wp-content/uploads/2019/04/cropped-favicon-192x192.png"
-        sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://hasthemes.com/wp-content/uploads/2019/04/cropped-favicon-180x180.png" />
-    <meta name="msapplication-TileImage"
-        content="https://hasthemes.com/wp-content/uploads/2019/04/cropped-favicon-270x270.png" />
-
-    <!-- CSS 
-    ========================= -->
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <link rel="stylesheet" href="css/index.min.css">
-    <link rel="stylesheet" href="css/index.css">
-
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!--modernizr min js here-->
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-
-
-    <!-- Structured Data  -->
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Replace_with_your_site_title",
-        "url": "Replace_with_your_site_URL"
-        }
-    </script>
-</head>
-
 <body>
-
-
-    <!--offcanvas menu area start-->
-    <div class="body_overlay">
-
-    </div>
-    <div class="offcanvas_menu">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="offcanvas_menu_wrapper">
-                        <div class="canvas_close">
-                            <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
-                        </div>
-                        <div class="welcome_text text-center">
-                            <p>Welcome to Bucker Bakery Shop</p>
-                        </div>
-                        <div id="menu" class="text-left ">
-                            <ul class="offcanvas_main_menu">
-                                <li class="menu-item-has-children active">
-                                    <a href="#">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.php">Home 01</a></li>
-                                        <li><a href="index-2.html">Home 02</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li class="menu-item-has-children"><a href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="404.html">Error 404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children"><a href="#">Shop</a>
-                                    <ul class="sub-menu">
-										<li>
-											<a href="shop.html">Shop</a>
-										</li>
-										<li>
-											<a href="single-product.html">Shop product</a>
-										</li>
-										<li>
-											<a href="my-account.html">My Account</a>
-										</li>
-										<li>
-											<a href="login-register.html">Login | Register</a>
-										</li>
-										<li>
-											<a href="cart.html">Shopping Cart</a>
-										</li>
-										<li>
-											<a href="wishlist.html">Wishlist</a>
-										</li>
-										<li>
-											<a href="compare.html">Compare</a>
-										</li>
-										<li>
-											<a href="checkout.html">Checkout</a>
-										</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children"><a href="#">blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog.html">Blog Left Sidebar</a></li>
-										<li><a href="blog-detail.html">Blog Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children"><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--offcanvas menu area end-->
-
-    <!--header area start-->
-    <header class="header_section">
-        <div class="header_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="header_top_inner d-flex justify-content-between">
-                            <div class="welcome_text">
-                                <p>World Wide Completely Free Returns and Free Shipping</p>
-                            </div>
-                            <div class="header_top_sidebar d-flex align-items-center">
-                                <ul class="d-flex">
-                                    <li><i class="icofont-phone"></i> <a href="tel:+00123456789">+00 123 456 789</a>
-                                    </li>
-                                    <li><i class="icofont-envelope"></i> <a
-                                            href="mailto:demo@example.com">demo@example.com</a></li>
-                                    <li class="account_link"> <i class="icofont-user-alt-7"></i><a href="#">Account</a>
-                                        <ul class="dropdown_account_link">
-                                            <li><a href="my-account.html">My Account</a></li>
-                                            <li><a href="login-register.html">Login</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="main_header d-flex justify-content-between align-items-center">
-                        <div class="header_logo">
-                            <a class="sticky_none" href="index.php"><img src="img/logo/logo.png" alt=""></a>
-                        </div>
-                        <!--main menu start-->
-                        <div class="main_menu d-none d-lg-block">
-                            <nav>
-                                <ul class="d-flex">
-                                    <li><a class="active" href="index.php">Home</a>
-                                        <ul class="bucker-dropdown">
-                                            <li><a href="index.php">Home 01</a></li>
-                                            <li><a href="index-2.html">Home 02</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="bucker-dropdown">
-                                            <li><a href="faq.html">FAQ</a></li>
-                                            <li><a href="404.html">Error 404</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="megamenu-holder">
-                                        <a href="shop-left-sidebar.html">Shop</a>
-                                        <ul class="megamenu grid-container">
-                                           <li>
-												<a href="shop.html">Shop</a>
-											</li>
-											<li>
-												<a href="single-product.html">Shop product</a>
-											</li>
-											<li>
-												<a href="my-account.html">My Account</a>
-											</li>
-											<li>
-												<a href="login-register.html">Login | Register</a>
-											</li>
-											<li>
-												<a href="cart.html">Shopping Cart</a>
-											</li>
-											<li>
-												<a href="wishlist.html">Wishlist</a>
-											</li>
-											<li>
-												<a href="compare.html">Compare</a>
-											</li>
-											<li>
-												<a href="checkout.html">Checkout</a>
-											</li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="blog-left-sidebar.html">blog</a>
-                                        <ul class="bucker-dropdown">
-                                            <li><a href="blog.html">Blog Left Sidebar</a></li>
-											<li><a href="blog-detail.html">Blog Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!--main menu end-->
-                        <div class="header_account">
-                            <ul class="d-flex">
-                                <li class="header_search"><a href="javascript:void(0)"><i class="pe-7s-search"></i></a>
-                                </li>
-                                <li class="header_wishlist"><a href="wishlist.html"><i class="pe-7s-like"></i></a></li>
-                                <li class="shopping_cart"><a href="javascript:void(0)"><i class="pe-7s-shopbag"></i></a>
-                                    <span class="item_count">2</span>
-                                </li>
-                            </ul>
-                            <div class="canvas_open">
-                                <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!--mini cart-->
-    <div class="mini_cart">
-        <div class="cart_gallery">
-            <div class="cart_close">
-                <div class="cart_text">
-                    <h3>cart</h3>
-                </div>
-                <div class="mini_cart_close">
-                    <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
-                </div>
-            </div>
-            <div class="cart_item">
-                <div class="cart_img">
-                    <a href="single-product.html"><img src="img/product/product1.png" alt=""></a>
-                </div>
-                <div class="cart_info">
-                    <a href="single-product.html">Primis In Faucibus</a>
-                    <p>1 x <span> $65.00 </span></p>
-                </div>
-                <div class="cart_remove">
-                    <a href="#"><i class="ion-android-close"></i></a>
-                </div>
-            </div>
-            <div class="cart_item">
-                <div class="cart_img">
-                    <a href="single-product.html"><img src="img/product/product2.png" alt=""></a>
-                </div>
-                <div class="cart_info">
-                    <a href="single-product.html">Letraset Sheets</a>
-                    <p>1 x <span> $60.00 </span></p>
-                </div>
-                <div class="cart_remove">
-                    <a href="#"><i class="ion-android-close"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="mini_cart_table">
-            <div class="cart_table_border">
-                <div class="cart_total">
-                    <span>Sub total:</span>
-                    <span class="price">$125.00</span>
-                </div>
-                <div class="cart_total mt-10">
-                    <span>total:</span>
-                    <span class="price">$125.00</span>
-                </div>
-            </div>
-        </div>
-        <div class="mini_cart_footer">
-            <div class="cart_button">
-                <a href="cart.html">View cart</a>
-            </div>
-            <div class="cart_button">
-                <a href="checkout.html"><i class="fa fa-sign-in"></i> Checkout</a>
-            </div>
-        </div>
-    </div>
-    <!--mini cart end-->
-
-    <!-- page search box -->
-    <div class="page_search_box">
-        <div class="search_close">
-            <i class="ion-close-round"></i>
-        </div>
-        <form class="border-bottom" action="#">
-            <input class="border-0" placeholder="Search products..." type="text">
-            <button type="submit"><span class="pe-7s-search"></span></button>
-        </form>
-    </div>
 
     <!--slide banner section start-->
     <div class="hero_banner_section d-flex align-items-center mb-110">
@@ -335,37 +20,20 @@ $this->title = 'My Yii Application';
                 <div class="row align-items-center">
                     <div class="col-lg-5">
                         <div class="hero_content">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s"><span>70%</span>
-                                Sale Off</h3>
-                            <h1 class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">Quality Products
-                                Bakery Items</h1>
-                            <a class="btn btn-link wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s"
-                                href="shop-left-sidebar.html">Shop Now</a>
+                            <h3 class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s"><span>重点</span>
+                                关注</h3>
+                            <h1 class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">俄乌冲突</h1>
+                            <h5 class="btn btn-link wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s" id="scrollDown">往下阅读更多-></h5>
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <div class="hero_shape_banner">
-                            <img class="banner_keyframes_animation wow" src="img/bg/hero-banner-shape.png"
+                            <img class="banner_keyframes_animation wow" src="img/bg/crown-globe.png"
                                 alt="">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero_mini_shape shape1">
-            <img src="img/others/hero-mini-shape1.png" alt="">
-        </div>
-        <div class="hero_mini_shape shape2">
-            <img src="img/others/hero-mini-shape2.png" alt="">
-        </div>
-        <div class="hero_mini_shape shape3">
-            <img src="img/others/hero-mini-shape3.png" alt="">
-        </div>
-        <div class="hero_mini_shape shape4">
-            <img src="img/others/hero-mini-shape4.png" alt="">
-        </div>
-        <div class="hero_mini_shape shape5">
-            <img src="img/others/hero-mini-shape5.png" alt="">
         </div>
     </div>
     <!--slider area end-->
@@ -459,7 +127,7 @@ $this->title = 'My Yii Application';
     <!-- banner section  end -->
 
     <!-- product section start -->
-    <div class="product_section mb-80 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+    <div id="down" class="product_section mb-80 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
         <div class="container">
             <div class="product_header">
                 <div class="section_title text-center">
@@ -671,31 +339,416 @@ $this->title = 'My Yii Application';
     </div>
     <!-- product section end -->
 
-    <!-- banner fullwidth section start -->
-    <div class="banner_fullwidth_section mb-105 " data-bgimg="img/bg/banner-fullwidth1.png">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="banner_discount_text text-center">
-                        <h3 class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s"><span>45%
-                            </span> Sale
-                            Off</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">Best Quality
-                            Bakery
-                            Products</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">Lorem ipsum
-                            dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut
-                            labore et
-                            dolore magna</p>
-                        <a class="btn btn-link wow fadeInUp" href="shop-left-sidebar.html" data-wow-delay="0.3s"
-                            data-wow-duration="1.3s">Shop Now</a>
-                    </div>
+    <!-- TimeLine -->
+    <section class="body-text">
+        <div class="section_title text-center mb-55">
+            <h2>俄乌冲突重要事件</h2>
+            <p>更新于2023/01/28</p>
+        </div>
+
+        <div class="timeline svelte-lyo1l7">
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">May 18</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Mariupol defenders surrender to Russia but their fate is
+                            uncertain
+                        </h6><br/>
+                    <p class="svelte-lyo1l7">More than 250 Ukrainian fighters surrendered to Russian forces at
+                        the Azovstal steelworks in Mariupol after weeks of desperate resistance, bringing an end
+                        to the most devastating siege of Russia&#39;s war in Ukraine and allowing President
+                        Vladimir Putin to claim a rare victory in his faltering campaign.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">May 10</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">U.S. House passes $40 bln bill to bolster Ukraine against
+                            Russian invasion 
+                        </h6><br/>
+                    <p class="svelte-lyo1l7">The U.S. House of Representatives approved more than $40 billion
+                        more aid for Ukraine on Tuesday, as Congress races to keep military aid flowing and
+                        boost the government in Kyiv as it grapples with the Russian invasion.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Apr. 28</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Russian-controlled region of Ukraine will start using rouble
+                        </h6><br/>
+                    <p class="svelte-lyo1l7">Ukraine&#39;s southern Kherson region will start using the Russian
+                        rouble from May 1, an official from a pro-Russian committee which styles itself as the
+                        region&#39;s &quot;military-civil administration&quot; told Russian news agency RIA.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Apr. 27</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Russia halts gas supplies to Poland and Bulgaria </h6> <br/>
+                    <p class="svelte-lyo1l7">The Security Council of Moldova&#39;s breakaway Transdniestria
+                        region has reported a &quot;terrorist attack&quot; on a military unit near the city of
+                        Tiraspol, the TASS news agency reported on Tuesday.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Apr. 26</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Military unit in Moldovan breakaway region hit by
+                            &#39;terrorist attack&#39; - media </h6><br/>
+                    <p class="svelte-lyo1l7">The Security Council of Moldova&#39;s breakaway Transdniestria
+                        region has reported a &quot;terrorist attack&quot; on a military unit near the city of
+                        Tiraspol, the TASS news agency reported on Tuesday.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Apr. 8</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Death toll from Kramatorsk missile strike rises to 57, Ukraine
+                            official says </h6><br/>
+                    <p class="svelte-lyo1l7">At least 57 people were killed in a missile strike on a railway
+                        station in east Ukraine that was packed with women, children and elderly trying to flee
+                        fighting, Ukrainian authorities said.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Apr. 7</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">U.N. suspends Russia from human rights body, Moscow then quits
+                        </h6><br/>
+                    <p class="svelte-lyo1l7">The United Nations General Assembly suspended Russia from the U.N.
+                        Human Rights Council over reports of &quot;gross and systematic violations and abuses of
+                        human rights&quot; in Ukraine, prompting Moscow to announce it was quitting the body.
+                    </p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Apr. 4</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Germany says West to agree more sanctions on Russia after
+                            Bucha killings </h6><br/>
+                    <p class="svelte-lyo1l7">Germany said on Sunday that the West would agree to impose more
+                        sanctions on Russia in the coming days after Ukraine accused Russian forces of war
+                        crimes near Kyiv, ratcheting up the already vast economic pressure on Russia over its
+                        invasion.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Mar. 21</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Ukraine defies Russian demand to lay down arms in Mariupol
+                        </h6><br/>
+                    <p class="svelte-lyo1l7">Russia&#39;s military had ordered Ukrainians inside the besieged
+                        southeastern city to surrender by 5 a.m., saying that those who do so would be permitted
+                        to leave through safe corridors.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Mar. 10</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Ukraine says Russian troops at gas compressor stations pose
+                            supply risk </h6><br/>
+                    <p class="svelte-lyo1l7">The arrival of Russian troops at two gas compressor stations in
+                        eastern Ukraine poses a risk to European supplies, Ukraine&#39;s gas pipeline operator
+                        warned on Thursday, although there were no signs of an immediate impact on flows.</p>
+                </div>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Russia shifts line on Ukraine hospital bombing </h6><br/>
+                    <p class="svelte-lyo1l7">Russia shifted its stance over the bombing of a Ukrainian hospital
+                        in the city of Mariupol, with a mix of statements that veered between aggressive denials
+                        and a call to establish clear facts.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Mar. 9</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Ukraine accuses Russia of genocide after bombing of
+                            children&#39;s hospital </h6>
+                    <p class="svelte-lyo1l7">The Mariupol city council said the hospital had been hit several
+                        times in what the White House called a &quot;barbaric use of military force to go after
+                        innocent civilians&quot;.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Mar. 6</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Fighting traps residents in Mariupol </h6><br/>
+                    <p class="svelte-lyo1l7">Fighting stopped about 200,000 people from evacuating the besieged
+                        Ukrainian city of Mariupol for a second day in a row on Sunday, as Russian President
+                        Vladimir Putin vowed to press ahead with his invasion unless Kyiv surrendered.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Mar. 4</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Mariupol subjected to intense strikes </h6><br/>
+                    <p class="svelte-lyo1l7">Mariupol under Ukrainian control but subject to intense strikes, UK
+                        says.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Mar. 3</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Ukraine, Russia make progress on evacuation corridors as war
+                            rages </h6> <br/>
+                    <p class="svelte-lyo1l7">Russia and Ukraine have agreed on the need to set up humanitarian
+                        corridors and a possible ceasefire around them for fleeing civilians.</p>
+                </div>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Tens of millions of people in Ukraine in &quot;potentially
+                            mortal danger&quot; </h6><br/>
+                    <p class="svelte-lyo1l7">Military operations escalate with bombings of major cities and
+                        reports of cluster weapons striking civilian targets, according to a U.N. human rights
+                        official.</p>
+                </div>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">&quot;We are being destroyed,&quot; city council of
+                            Ukraine&#39;s Mariupol says </h6><br/>
+                    <p class="svelte-lyo1l7">Mariupol city council said Russian forces were constantly and
+                        deliberately shelling vital civilian infrastructure in the southeastern Ukrainian port,
+                        leaving it without water, heating or power and preventing bringing supplies or
+                        evacuating people.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Mar. 2</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Kharkiv under siege </h6><br/>
+                    <p class="svelte-lyo1l7">On a residential street in the Ukrainian city of Kharkiv, debris
+                        was strewn all around, blood stained the ground and the bodies of people carried from
+                        destroyed homes lay covered in blankets.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Mar. 1</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Attacks continue in Kyiv and Kharkiv </h6> <br/>
+                    <p class="svelte-lyo1l7">Nearly a week since Moscow unleashed its war on its neighbour, its
+                        troops have failed to capture a single major Ukrainian city after running into fierce
+                        resistance. Deadly shelling of civilian areas in Kharkiv indicated that frustrated
+                        Russian commanders could resort to more devastating tactics to achieve the goals of
+                        their invasion.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 28</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Human rights groups and Ukrainian ambassador accuse Russia of
+                            using cluster and vacuum bombs </h6> <br/>
+                    <p class="svelte-lyo1l7">These weapons have been condemned by a variety of international
+                        organisations.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 27</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Russians push into Kharkiv </h6><br/>
+                    </a>
+                    <p class="svelte-lyo1l7">Russian soldiers and armoured vehicles were seen in different parts
+                        of Ukraine’s second-largest city and explosions rocked oil and gas installations.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 26</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">West to kick Russian banks out of SWIFT </h6><br/>
+                    </a>
+                    <p class="svelte-lyo1l7">The United States and its allies moved to block certain Russian
+                        banks’ access to the SWIFT international payment system, a major step that seemed all
+                        but off-the-table for many European nations just days before.</p>
+                </div>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Germany sends defensive weapons </h6><br/>
+                    <p class="svelte-lyo1l7">Chancellor Olaf Scholz said Berlin would supply Ukraine with 1,000
+                        anti-tank weapons and 500 Stinger surface-to-air missiles, reversing a long-standing
+                        policy of not exporting weapons to war zones.</p>
+                </div>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Kyiv still in Ukrainian hands </h6><br/>
+                    <p class="svelte-lyo1l7">Russian forces battered Ukrainian cities with artillery and cruise
+                        missiles on Saturday for a third day running but a defiant President Volodymyr Zelenskiy
+                        said the capital Kyiv remained in Ukrainian hands.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 25</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">NATO deploys more troops </h6><br/>
+                    <p class="svelte-lyo1l7">NATO leaders said on Friday they were deploying more troops to
+                        eastern Europe after Russia invaded Ukraine, saying that Moscow had lied about its
+                        intentions.</p>
+                </div>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Invasion continues </h6><br/>
+                    <p class="svelte-lyo1l7">Missiles pounded the Ukrainian capital as Russian forces pressed
+                        their advance and Ukrainian President Volodymyr Zelenskiy pleaded with the international
+                        community to do more, saying sanctions announced so far were not enough.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 24</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Russia invades Ukraine </h6><br/>
+                    <p class="svelte-lyo1l7">Russian President Vladimir Putin authorised “special military
+                        operations” in eastern Ukraine and asked Ukrainian forces to lay down their arms in a
+                        televised address. Russian forces begin missile and artillery attacks on Ukrainian
+                        forces and air bases, striking areas in major cities.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 23</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Ukraine’s parliament approves state of emergency </h6><br/>
+                    <p class="svelte-lyo1l7">The Ukrainian parliament approved a declaration of a state of
+                        emergency in the entire country, except for two eastern regions where it had already
+                        been in place since 2014.</p>
+                </div>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Ukraine separatists seek Russian help </h6> <br/>
+                    <p class="svelte-lyo1l7">Russian-backed separatist leaders asked Russia for help in
+                        repelling “aggression” from the Ukrainian army. The White House rejected the plea as
+                        another Russian &quot;false flag&quot; operation, a fake crisis manufactured to justify
+                        greater intervention.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 22</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">First wave of U.S. sanctions on Russia </h6> <br/>
+                    <p class="svelte-lyo1l7">Biden announced the first tranche of Russia sanctions. The
+                        sanctions, among others things, target Russian banks and sovereign debt.</p>
+                </div>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">First wave of EU sanctions on Russia </h6><br/>
+                    <p class="svelte-lyo1l7">The European Union agreed to sanction 27 Russians and entities, as
+                        well as banks and the defence sector and to limit Russian access to European capital
+                        markets.</p>
+                </div>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Germany freezes Nord Stream 2 gas project </h6>
+                    <p class="svelte-lyo1l7">Germany halted the Nord Stream 2 Baltic Sea gas pipeline project,
+                        designed to double the flow of Russian gas direct to Germany.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 21</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Putin orders troops to Ukraine after recognising breakaway
+                            regions </h6> <br/>
+                    <p class="svelte-lyo1l7">Russian President Putin ordered the deployment of troops to two
+                        breakaway regions in eastern Ukraine after recognising them as independent.</p>
+                </div>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Russia recognises breakaway regions </h6> <br/>
+                    <p class="svelte-lyo1l7">Russian state television showed Putin, joined by Russia-backed
+                        separatist leaders, signing a decree recognising the independence of the two Ukrainian
+                        breakaway regions: the self-proclaimed Donetsk People’s Republic and the Luhansk
+                        People&#39;s Republic.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 14</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">President Volodymyr Zelenskiy says Ukraine will persist with
+                            NATO goal </h6> <br/>
+                    <p class="svelte-lyo1l7">Ukrainian President Volodymyr Zelenskiy said his country would
+                        continue to seek membership in the NATO transatlantic military alliance despite pressure
+                        to cede that aspiration to avoid war with Russia</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 10</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Russia holds drills in Belarus </h6><br/>
+                    <p class="svelte-lyo1l7">Russia held military exercises in Belarus and the Black Sea
+                        following the buildup of its forces near Ukraine.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Feb. 3</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Moscow shuts down German broadcaster’s Russian operations in
+                            retaliatory move </h6><br/>
+                    <p class="svelte-lyo1l7">Russia shut down German broadcaster Deutsche Welle’s operations in
+                        Moscow and stripped its staff of their accreditation in a retaliatory move after Berlin
+                        banned Russian broadcaster RT DE.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Jan. 2022</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Ukraine gets weapons from the U.S., Baltic States, others
+                        </h6><br/>
+                    <p class="svelte-lyo1l7">Western countries had stepped up arms deliveries to Ukraine but it
+                        said it needed more in order to resist Russia’s bigger and better-equipped army.</p>
+                </div>
+            </div>
+            <div class="date svelte-lyo1l7"><svg height="25" width="20" class="svelte-lyo1l7">
+                    <circle cx="10" cy="12" r="5" stroke="#999" stroke-width="2" fill="white"></circle>
+                </svg>
+                <h5 class="svelte-lyo1l7">Dec. 2021</h5>
+                <div class="event svelte-lyo1l7">
+                        <h6 class="svelte-lyo1l7">Russia builds up forces near Ukraine </h6><br/>
+                    <p class="svelte-lyo1l7">Satellite images showed Russia building up forces in annexed Crimea
+                        and at sites near the Ukrainian border.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- banner fullwidth section end -->
+    </section>
 
     <!-- product section start -->
     <div class="product_section mb-80 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
@@ -1068,313 +1121,6 @@ $this->title = 'My Yii Application';
         </div>
     </div>
     <!-- blog section end -->
-
-    <!--footer area start-->
-    <footer class="footer_widgets">
-        <div class="container">
-            <div class="shipping_area">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="single_shipping d-flex align-items-center">
-                            <div class="shipping_icon">
-                                <img src="img/others/shipping1.png" alt="">
-                            </div>
-                            <div class="shipping_text">
-                                <h3>Free Shipping</h3>
-                                <p>Capped at $39 per order</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="single_shipping d-flex align-items-center">
-                            <div class="shipping_icon">
-                                <img src="img/others/shipping2.png" alt="">
-                            </div>
-                            <div class="shipping_text">
-                                <h3>Card Payments</h3>
-                                <p>12 Months Installments</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <div class="single_shipping d-flex align-items-center">
-                            <div class="shipping_icon">
-                                <img src="img/others/shipping3.png" alt="">
-                            </div>
-                            <div class="shipping_text">
-                                <h3>Easy Returns</h3>
-                                <p>Shop Wwith Confidence</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main_footer">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="main_footer_inner d-flex">
-                            <div class="footer_widget_list contact footer_list_width">
-                                <h3>Contact Us</h3>
-                                <div class="footer_contact_desc">
-                                    <p>If you have any question.please
-                                        contact us at <a href="#">demo@example.com</a></p>
-                                </div>
-                                <div class="footer_contact_info">
-                                    <div class="footer_contact_info_list d-flex align-items-center">
-                                        <div class="footer_contact_info_icon">
-                                            <span class="pe-7s-map-marker"></span>
-                                        </div>
-                                        <div class="footer_contact_info_text">
-                                            <p>Your address goes here.
-                                                123, Address.</p>
-                                        </div>
-                                    </div>
-                                    <div class="footer_contact_info_list d-flex align-items-center">
-                                        <div class="footer_contact_info_icon">
-                                            <span class="pe-7s-phone"></span>
-                                        </div>
-                                        <div class="footer_contact_info_text">
-                                            <ul>
-                                                <li><a href="tel:+0123456789">+ 0 123 456 789</a>
-                                                </li>
-                                                <li><a href="tel:+0123456789">+ 0 123 456 789</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="footer_menu_widget footer_list_width middle d-flex">
-                                <div class="footer_widget_list">
-                                    <h3>Information</h3>
-                                    <div class="footer_menu">
-                                        <ul>
-                                            <li><a href="about.html"> About us</a></li>
-                                            <li><a href="contact.html">Delivery information</a></li>
-                                            <li><a href="contact.html">Privacy Policy</a></li>
-                                            <li><a href="contact.html">Sales</a></li>
-                                            <li><a href="contact.html">Terms & Conditions</a></li>
-                                            <li><a href="contact.html">Shipping Policy</a></li>
-                                            <li><a href="contact.html">EMI Payment</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="footer_widget_list">
-                                    <h3>Account</h3>
-                                    <div class="footer_menu">
-                                        <ul>
-                                            <li><a href="my-account.html"> My account</a></li>
-                                            <li><a href="contact.html">My orders</a></li>
-                                            <li><a href="contact.html">Returns</a></li>
-                                            <li><a href="contact.html">Shipping</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                            <li><a href="about.html">How Does It Work</a></li>
-                                            <li><a href="login-register.html">Merchant Sign Up</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer_widget_list footer_list_width">
-                                <h3>newsletter</h3>
-                                <div class="footer_newsletter">
-                                    <div class="newsletter_desc">
-                                        <p>If you have any question.please
-                                            contact us at <a href="contact.html">Send Us a Email</a></p>
-                                    </div>
-
-                                    <div class="newsletter_subscribe">
-                                        <form id="mc-form">
-                                            <input id="mc-email" type="email" autocomplete="off"
-                                                placeholder="Email Address">
-                                            <button id="mc-submit"><i class="ion-arrow-right-c"></i></button>
-                                        </form>
-                                        <!-- mailchimp-alerts Start -->
-                                        <div class="mailchimp-alerts text-centre">
-                                            <div class="mailchimp-submitting"></div>
-                                            <!-- mailchimp-submitting end -->
-                                            <div class="mailchimp-success"></div>
-                                            <!-- mailchimp-success end -->
-                                            <div class="mailchimp-error"></div>
-                                            <!-- mailchimp-error end -->
-                                        </div><!-- mailchimp-alerts end -->
-                                    </div>
-                                    <div class="footer_paypal">
-                                        <a href="#"><img src="img/others/paypal.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                <div class="copyright_right text-center">
-                    <p> © 2021 <a href="index.php"> Bucker.</a> Made with <i class="ion-heart"></i> by <a
-                            href="https://themeforest.net/user/codecarnival/portfolio">CodeCarnival</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--footer area end-->
-
-
-
-    <!-- modal area start-->
-    <div class="modal fade" id="modal_box" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="ion-android-close"></i></span>
-                </button>
-                <div class="modal_body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-5 col-sm-12">
-                                <div class="modal_tab">
-                                    <div class="tab-content product-details-large">
-                                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                                            <div class="modal_tab_img">
-                                                <a href="single-product.html"><img src="img/product/product1.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab2" role="tabpanel">
-                                            <div class="modal_tab_img">
-                                                <a href="single-product.html"><img src="img/product/product2.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab3" role="tabpanel">
-                                            <div class="modal_tab_img">
-                                                <a href="#"><img src="img/product/product3.png" alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab4" role="tabpanel">
-                                            <div class="modal_tab_img">
-                                                <a href="#"><img src="img/product/product4.png" alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal_tab_button">
-                                        <ul class="nav product_navactive owl-carousel" role="tablist">
-                                            <li>
-                                                <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab"
-                                                    aria-controls="tab1" aria-selected="false"><img
-                                                        src="img/product/mini-product/product1.png" alt=""></a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link" data-toggle="tab" href="#tab2" role="tab"
-                                                    aria-controls="tab2" aria-selected="false"><img
-                                                        src="img/product/mini-product/product2.png" alt=""></a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link button_three" data-toggle="tab" href="#tab3"
-                                                    role="tab" aria-controls="tab3" aria-selected="false"><img
-                                                        src="img/product/mini-product/product3.png" alt=""></a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link" data-toggle="tab" href="#tab4" role="tab"
-                                                    aria-controls="tab4" aria-selected="false"><img
-                                                        src="img/product/mini-product/product4.png" alt=""></a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-7 col-md-7 col-sm-12">
-                                <div class="modal_right">
-                                    <div class="modal_title mb-10">
-                                        <h2>Donec Ac Tempus</h2>
-                                    </div>
-                                    <div class="modal_price mb-10">
-                                        <span class="new_price">$64.99</span>
-                                        <span class="old_price">$78.99</span>
-                                    </div>
-                                    <div class="modal_description mb-15">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Mollitia iste
-                                            laborum ad impedit pariatur esse optio tempora sint
-                                            ullam autem deleniti nam
-                                            in quos qui nemo ipsum numquam, reiciendis maiores
-                                            quidem aperiam, rerum vel
-                                            recusandae </p>
-                                    </div>
-                                    <div class="variants_selects">
-                                        <div class="variants_size">
-                                            <h2>size</h2>
-                                            <select class="select_option">
-                                                <option selected value="1">s</option>
-                                                <option value="1">m</option>
-                                                <option value="1">l</option>
-                                                <option value="1">xl</option>
-                                                <option value="1">xxl</option>
-                                            </select>
-                                        </div>
-                                        <div class="variants_color">
-                                            <h2>color</h2>
-                                            <select class="select_option">
-                                                <option selected value="1">purple</option>
-                                                <option value="1">violet</option>
-                                                <option value="1">black</option>
-                                                <option value="1">pink</option>
-                                                <option value="1">orange</option>
-                                            </select>
-                                        </div>
-                                        <div class="modal_add_to_cart">
-                                            <form action="#">
-                                                <input min="1" max="100" step="1" value="1" type="number">
-                                                <button type="submit">add to cart</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="modal_social">
-                                        <h2>Share this product</h2>
-                                        <ul>
-                                            <li class="facebook"><a href="#"><i class="ion-social-facebook"></i></a>
-                                            </li>
-                                            <li class="twitter"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                            <li class="pinterest"><a href="#"><i class="ion-social-pinterest"></i></a>
-                                            </li>
-                                            <li class="google-plus"><a href="#"><i
-                                                        class="ion-social-googleplus"></i></a>
-                                            </li>
-                                            <li class="linkedin"><a href="#"><i class="ion-social-linkedin"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <!-- modal area end-->
-
-    <!-- JS
-============================================ -->
-
-    <script src="js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <script src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.scrollup.min.js"></script>
-    <script src="js/jquery.nice-select.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mailchimp-ajax.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.zoom.min.js"></script>
-
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
-
 
 </body>
 

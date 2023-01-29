@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Knowledge;
+    font-style: normal;
+    font-weight: 100;
+    src: local("Knowledge Ultra Light"), local("KnowledgeUltraLight"), url(//graphics.thomsonreuters.com/fonts/KnowledgeUltraLight.woff) format("woff")
+}
+
+@font-face {
+    font-family: Knowledge;
+    font-style: normal;
+    font-weight: 300;
+    src: local("Knowledge Light"), local("KnowledgeLight"), url(//graphics.thomsonreuters.com/fonts/KnowledgeLight.woff) format("woff")
+}
+
+@font-face {
+    font-family: Knowledge;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Knowledge Regular"), local("KnowledgeRegular"), url(//graphics.thomsonreuters.com/fonts/KnowledgeRegular.woff) format("woff")
+}
+
+@font-face {
+    font-family: Knowledge;
+    font-style: italic;
+    font-weight: 400;
+    src: local("Knowledge Regular Italic"), local("KnowledgeRegularItalic"), url(//graphics.thomsonreuters.com/fonts/KnowledgeRegularItalic.woff) format("woff")
+}
+
+@font-face {
+    font-family: Knowledge;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Knowledge Medium"), local("KnowledgeMedium"), url(//graphics.thomsonreuters.com/fonts/KnowledgeMedium.woff) format("woff")
+}
+
+@font-face {
+    font-family: Knowledge;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Knowledge Bold"), local("KnowledgeBold"), url(//graphics.thomsonreuters.com/fonts/KnowledgeBold.woff) format("woff")
+}
+
+@font-face {
+    font-family: Knowledge;
+    font-style: italic;
+    font-weight: 700;
+    src: local("Knowledge Bold Italic"), local("KnowledgeBoldItalic"), url(//graphics.thomsonreuters.com/fonts/KnowledgeBoldItalic.woff) format("woff")
+}
+
+@font-face {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url(//graphics.thomsonreuters.com/fonts/SourceSansPro-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url(//graphics.thomsonreuters.com/fonts/SourceSansPro-Semibold.woff) format("woff")
+}
+
+@font-face {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url(//graphics.thomsonreuters.com/fonts/SourceSansPro-Bold.woff) format("woff")
+}
+
+@font-face {
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: 400;
+    src: local("Source Sans Pro Italic"), local("SourceSansPro-It"), url(//graphics.thomsonreuters.com/fonts/SourceSansPro-Italic.woff) format("woff")
+}
+
+@font-face {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 300;
+    src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url(//graphics.thomsonreuters.com/fonts/SourceSansPro-Light.woff) format("woff")
+}
+
+@font-face {
+    font-family: freight-book;
+    font-style: normal;
+    font-weight: 400;
+    src: url(//graphics.thomsonreuters.com/fonts/freight-book.woff) format("woff")
+}
+
+section {
+    display: block
+}
+
+section.body-text p {
+    font-family: freight-book, serif
+}
+
+section,
+section.body-text {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+section.body-text ul,
+section.body-text ol,
+section.body-text p {
+    font-size: 1.3rem;
+    line-height: 2.1rem
+}
+
+section.body-text ul.font-sans,
+section.body-text ol.font-sans,
+section.body-text p.font-sans {
+    font-size: 1.1rem;
+    line-height: 1.75rem
+}
+
+@media (max-width: 767.98px) {
+
+    section.body-text ul,
+    section.body-text ol,
+    section.body-text p {
+        font-size: 1.1rem;
+        line-height: 1.8rem
+    }
+
+    section.body-text ul.font-sans,
+    section.body-text ol.font-sans,
+    section.body-text p.font-sans,
+    section.body-text.font-sans p {
+        font-size: 1rem;
+        line-height: 1.6rem
+    }
+}
+
+section.body-text ul.important,
+section.body-text ol.important,
+section.body-text p.important {
+    font-size: 1.3rem !important;
+    line-height: 2.1rem !important
+}
+
+section.body-text ul.important.font-sans,
+section.body-text ol.important.font-sans,
+section.body-text p.important.font-sans,
+section.body-text.font-sans p.important {
+    font-size: 1.1rem !important;
+    line-height: 1.8rem !important
+}
+
+@media (max-width: 767.98px) {
+
+    .paragraph-size.important,
+    section.graphic p.important,
+    section.body-text ul.important,
+    section.body-text ol.important,
+    section.body-text p.important {
+        font-size: 1.1rem !important;
+        line-height: 1.8rem !important
+    }
+
+    section.body-text ul.important.font-sans,
+    section.body-text ol.important.font-sans,
+    section.body-text p.important.font-sans,
+    section.body-text.font-sans p.important {
+        font-size: 1rem !important;
+        line-height: 1.6rem !important
+    }
+}
+
+section.body-text {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+section.body-text p {
+    -webkit-font-smoothing: antialiased
+}
+
+section.body-text p a {
+    color: inherit;
+    background-size: 1px 1px;
+    background-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="2" y2="2" stroke="rgba(0, 0, 0, 0.8)" /></svg>');
+    background-position: 0 1.3rem;
+    background-repeat: repeat-x
+}
+
+@media (max-width: 767.98px) {
+    section.body-text p a {
+        background-position: 0 1.2rem
+    }
+}
+
+section.body-text p a:hover {
+    text-decoration: none
+}
+
+section.body-text h1 {
+    display: none
+}
+
+section.body-text h2 {
+    margin: 4rem 0 2rem;
+    text-align: center;
+    font-weight: 600
+}
+
+section.body-text h2:after {
+    display: block;
+    content: "";
+    background: #666666;
+    height: 3px;
+    width: 100px;
+    margin: 10px auto 2rem
+}
