@@ -195,11 +195,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                           </font><i class="fas fa-comments"></i>
                         </span></div>
                       <div class="content" _msttexthash="13490180405" _msthash="51">📖
-                        本教程更新于2023年01月18日，教程的内容针对最新稳定版而更新（如果你是旧版，教程会有些出入，请留意） 🦋 Butterfly已经更新到4.6.1 📚文档目录🚀快速开始 - 📑 主题页面 - 🛠
-                        主题配置-1 - ⚔️ 主题配置-2 - ❓ 主题问答 - ⚡️ 进阶教程 - ✨ 更新日志 - 🤞 打赏 你可以通过右下角的 简 按钮切换为简体显示 hexo-theme-butterfly是基于
-                        hexo-theme-melody 的基础上进行开发的。 安装Git安装 （Github）Git安装 （Gitee）npm安装稳定版【建议】 在你的 Hexo 根目录里 1git clone -b master
-                        https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly 测试版 测试版可能存在 bug，追求稳定的请安装稳定版 如果想要安装比较新的
-                        dev 分支，可以 1git clone -b dev https://github.com/je ...</div>
+                        本教程更新于2023年01月18日，教程的内容针对最新稳定版而更新（不知道啊...</div>
                     </div>
                   </div>
                   <div class="recent-post-item">
