@@ -63,6 +63,8 @@ AppAsset::register($this);
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="css/style.css">
