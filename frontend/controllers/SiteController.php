@@ -10,7 +10,8 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use common\models\LoginForm;
+// use common\models\LoginForm;
+use frontend\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
@@ -185,6 +186,11 @@ class SiteController extends Controller
     public function actionTeam()
     {
         return $this->render('team');
+    }
+
+    public function actionComment()
+    {
+        return $this->render('comment');
     }
 
     /**

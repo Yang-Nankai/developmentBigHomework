@@ -138,7 +138,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>我猜你不队_项目展示(2011028_2010349).pdf</td>
+                                                <td>我猜你不队_项目展示(2011028_2010349).pptx</td>
                                                 <td>Mar 27, 2019</td>
                                                 <td>杨鑫、孟笑朵</td>
                                                 <td><a href="#"
