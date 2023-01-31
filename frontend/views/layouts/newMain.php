@@ -177,7 +177,19 @@ AppAsset::register($this);
                         <!--main menu end-->
                         <div class="header_account">
                             <ul class="d-flex">
-                                <li class="header_wishlist"><?php echo Html::a('',['/site/login'],['class' => ['pe-7s-user']]); ?></li>
+                            <?php if (Yii::$app->user->isGuest) {
+                                echo Html::tag('li',Html::a('',['/site/login'],['class' => ['pe-7s-user']]),['class' => ['header_wishlist']]);
+                            } else {
+                                ?>
+                                <?php
+                                echo Html::beginForm(['/site/logout'], 'post')
+                                    . Html::submitButton(
+                                        ' [' . Yii::$app->user->identity->username . ']',
+                                        ['class' => 'pe-7s-settings']
+                                    )
+                                    . Html::endForm();
+                            } ?>
+                                <!-- <li class="header_wishlist"><?php echo Html::a('',['/site/login'],['class' => ['pe-7s-user']]); ?></li> -->
                             </ul>
                             <div class="canvas_open">
                                 <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
