@@ -1,11 +1,15 @@
-
 <?php
 
-/** @var yii\web\View $this */
-
+use frontend\models\UserComment;
 use yii\helpers\Html;
-use yii\widgets\LinkPager;
-use yii\bootstrap5\ActiveForm;
+use yii\helpers\Url;
+use yii\grid\ActionColumn;
+use yii\grid\GridView;
+use yii\helpers\VarDumper;
+
+/** @var yii\web\View $this */
+/** @var frontend\models\UserCommentSearch $searchModel */
+/** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = 'Comment';
 $this->params['breadcrumbs'][] = $this->title;
@@ -37,62 +41,56 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="card border p-2">
             <h2>留言</h2>
             <div class="card-body">
-                <!-- 输入框 -->
-                <?php $form = ActiveForm::begin([
-                    'options' => [
-                        'id' => 'noteEdit',
-                    ]
-                ]); ?>
-                <?= $form->field($comment, 'content')->textarea([
-                    'rows' => 5,
-                    'maxlength' => 200,
-                ]) ?>
-                <!-- <div id="noteEdit">
-                    <textarea name="content" rows="5"  maxlength="200" placeholder="请输入，最多200个字符..." ></textarea>
-                </div> -->
+                <!--输入框-->
+                <div id="noteEdit">
+                    <!-- <textarea name="note"></textarea> -->
+                    <textarea name="note" rows="5"  maxlength="200" placeholder="请输入，最多200个字符..." οnchange="this.value=this.value.substring(0, 200)" οnkeydοwn="this.value=this.value.substring(0, 200)" οnkeyup="this.value=this.value.substring(0, 200)" ></textarea>
+                </div>
                 <!--提交列表-->
                 <div class="input list-inline mt-3 container-fluid ">
-                    <div class="list-inline-item col-lg-auto p-0">
-                        <!-- <button type="button" class="btn  btn-info " style="width: 100%;height: 100%; color: white;">发送</button> -->
-                        <?= Html::submitButton('发送', ['class' => 'btn btn-info comment-btn', 'name' => 'comment-button']) ?>
+                    <div class="row ">
+                        <div class="  list-inline-item align-self-center  col-lg-auto p-0 ">
+                            <div class="container-fluid mt-2 ">
+                                <label>匿名</label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="  list-inline-item col-lg-auto  p-0">
+                            <button type="button" class="btn  btn-info " style="width: 100%;height: 100%; color: white;">发送</button>
+                        </div>
                     </div>
                 </div>
-                <?php ActiveForm::end(); ?>
+                
+                <?= GridView::widget([
+                    'dataProvider' => $dataProvider,
+                    'columns' => [
+                        ['class' => 'yii\grid\SerialColumn'],
+                        'username',
+                        'comment',
+                        'created_at',
+                    ],
+                ]); ?>
 
                 <!--留言列表-->
-                <div class=" container-fluid mt-5 border p-2" style="border-top: red solid 2px !important;">
+                <!-- <div class=" container-fluid mt-5 border p-2" style="border-top: red solid 2px !important;">
                     <div class="p-1 comments">
-                        <?php 
-                            foreach($models as $model):
-                                ?>
                                 <div class="container comment  m-1 p-0">
-                                    <div class="ml-3 border-left ">
+                                    <div class=" ml-3 border-left ">
                                         <div class="container ml-2">
-                                            <span><?php echo Html::encode($model->username);?></span>
-                                            <span class="summary-text small">
-                                                <?php
-                                                    $datetime = new \DateTime();
-                                                    $datetime->setTimestamp($model->created_at);
-                                                    echo $datetime->format('Y-m-d H:i:s');
-                                                ?>
-                                            </span>
+                                            <a class="author">
+                                                <span><span>
+                                                <span class="summary-text small">2020-04-10 16:01:27</span>
+                                            </a>
                                         </div>
-                                        <div class="messageText ml-2 container m-2"><?php echo Html::encode($model->comment)?></div>
+                                        <div class="messageText ml-2 container m-2">诸葛青，你败过吗？</div>
                                     </div>
                                 </div>
-                                <?php
-                            endforeach;
-                            ?>
-                            <div class="comment-pagination">
-                            <?php echo LinkPager::widget([ 
-                                'pagination' => $pages, 
-                                'nextPageLabel' => false, 
-                                'prevPageLabel' => false, 
-                                'options' => ['class' => 'pagination']
-                              ]);
-                            ?>
-                            </div>
-                        <!-- <div class="container comment  m-1 p-0">
+                    
+
+                        <div class="container comment  m-1 p-0">
                             <div class=" ml-3 border-left ">
                                 <div class="container ml-2">
                                     <a class="author">
@@ -102,7 +100,6 @@ $this->params['breadcrumbs'][] = $this->title;
                                 </div>
                                 <div class="messageText ml-2 container m-2">诸葛青，你败过吗？</div>
                             </div>
-
                         </div>
                         <div class="container comment  m-1 p-0">
                             <div class=" ml-3 border-left ">
@@ -114,9 +111,9 @@ $this->params['breadcrumbs'][] = $this->title;
                                 </div>
                                 <div class="messageText ml-2 container m-2">他们总说我瓜，其实我一点也不瓜，大多时候我都机智的一批</div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

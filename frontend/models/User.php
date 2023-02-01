@@ -22,6 +22,7 @@ use yii\web\IdentityInterface;
  * @property integer $created_at
  * @property integer $updated_at
  * @property string $password write-only password
+ * @property integer $permission
  */
 class User extends ActiveRecord implements IdentityInterface
 {
@@ -29,13 +30,16 @@ class User extends ActiveRecord implements IdentityInterface
     const STATUS_INACTIVE = 9;
     const STATUS_ACTIVE = 10;
 
+    const PERMISSION_ADMIN = 0;
+    const PERMISSION_NORMAL = 1;
+
 
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return '{{%user}}';
+        return '{{%ym_user_user}}';
     }
 
     /**
@@ -178,6 +182,29 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_hash = Yii::$app->security->generatePasswordHash($password);
     }
+    
+    /**
+     * Set Status as Active
+     *
+     * @param [type] $status
+     * @return void
+     */
+    public function setActive()
+    {
+        $this->status = User::STATUS_ACTIVE;
+    }
+
+    /**
+     * Set Permission as normal user
+     *
+     * @param [type] $status
+     * @return void
+     */
+    public function setPermission()
+    {
+        $this->permission = User::PERMISSION_NORMAL;
+    }
+    
 
     /**
      * Generates "remember me" authentication key

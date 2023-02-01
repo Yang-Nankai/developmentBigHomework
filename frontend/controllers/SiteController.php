@@ -16,8 +16,12 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use frontend\models\CommentForm;
+use frontend\models\UserComment;
 //test
 use app\models\EntryForm;
+use yii\data\Pagination;
+use yii\helpers\VarDumper;
 
 /**
  * Site controller
@@ -155,11 +159,12 @@ class SiteController extends Controller
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                echo "<script language=\"JavaScript\">alert(\"感谢您的建议，我们会尽快给您回复\");</script>";
+                // Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
             } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+                echo "<script language=\"JavaScript\">alert(\"发送出错，请检查!\");</script>";
+                // Yii::$app->session->setFlash('error', 'There was an error sending your message.');
             }
-
             return $this->refresh();
         }
 
@@ -178,19 +183,67 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
+    /**
+     * Displays personal page.
+     *
+     * @return mixed
+     */
     public function actionPersonal()
     {
         return $this->render('personal');
     }
 
+    /**
+     * Displays team page.
+     *
+     * @return mixed
+     */
     public function actionTeam()
     {
         return $this->render('team');
     }
 
+    /**
+     * Displays comment page.
+     *
+     * @return mixed
+     */
     public function actionComment()
     {
-        return $this->render('comment');
+        if (Yii::$app->user->isGuest) {
+            echo "<script language=\"JavaScript\">alert(\"您还未登录，请登录!\");</script>";
+            $model = new LoginForm();
+            if ($model->load(Yii::$app->request->post()) && $model->login()) {
+                return $this->goBack();
+            }
+            $model->password = '';
+            
+            return $this->render('login', [
+                'model' => $model,
+            ]);
+        } else {
+            $comments = UserComment::find()->where(['status' =>1 ]);
+            $countComments = clone $comments;
+            // VarDumper::dump($countComments->count());
+            $pages = new Pagination([
+                'totalCount' => $comments->count(),
+                'pageSize' => 10,
+            ]);
+
+            $user_comment = new CommentForm();
+            if ($user_comment->load(Yii::$app->request->post()) && $user_comment->comment()) {
+                return $this->refresh();
+            }
+            //获取数据
+            $models = $comments->offset($pages->offset)->limit($pages->limit)->all();
+
+            // VarDumper::dump($comments);
+            return $this->render('comment', [
+                'models' => $models,
+                'pages' => $pages,
+                'comment' => $user_comment,
+            ]);
+        }
     }
 
     /**
@@ -200,9 +253,12 @@ class SiteController extends Controller
      */
     public function actionSignup()
     {
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
             return $this->goHome();
         }
 
@@ -225,7 +281,6 @@ class SiteController extends Controller
 
                 return $this->goHome();
             }
-
             Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for the provided email address.');
         }
 
