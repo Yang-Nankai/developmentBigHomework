@@ -203,6 +203,11 @@ class SiteController extends Controller
         return $this->render('team');
     }
 
+    public function actionBlogDetail()
+    {
+        return $this->render('blog-detail');
+    }
+
     /**
      * Displays comment page.
      *
