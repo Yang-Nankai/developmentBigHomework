@@ -7,7 +7,7 @@
 use yii\bootstrap5\Html;
 use yii\bootstrap5\ActiveForm;
 
-$this->title = 'Login-Register';
+$this->title = 'Login-Signup';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <!doctype html>
@@ -19,11 +19,11 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="breadcrumbs_text">
-                        <h1>登录 | 注册</h1>
+                    <div class="breadcrumbs_text login-register-head">
+                        <h1 id="login-head">登录</h1><h1> | 注册</h1>
                         <ul>
                             <li><?php echo Html::a('HOME',['/site/index']); ?></li>
-                            <li> // Login | Register</li>
+                            <li> // <?php echo Html::a('Login',['/site/login']); ?> | <?php echo Html::a('Signup',['/site/signup']); ?></li>
                         </ul>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <!-- breadcrumbs area end -->
 
-    <!-- login | register area begin -->
+    <!-- login | Signup area begin -->
     <div class="login-register-area">
         <div class="container">
             <div class="row">
@@ -66,36 +66,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <?php ActiveForm::end(); ?>
                 </div>
-                <div class="col-lg-6 pt-5 pt-lg-0">
-                    <?php $form = ActiveForm::begin([
-                        'options' => [
-                            'class'=>'login-form'
-                        ]
-                    ]); ?>
-                    <h4 class="login-title">注册</h4>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <?= $form->field($model, 're_username')->label('用户名*')->textInput() ?>
-                        </div>
-                        <div class="col-lg-12">
-                            <?= $form->field($model, 're_email')->label('邮箱地址*')->textInput() ?>
-                        </div>
-                        <div class="col-lg-12">
-                            <?= $form->field($model, 're_password')->label('密码')->passwordInput() ?>
-                        </div>
-                        <div class="col-lg-12">
-                            <?= $form->field($model, 're_password_re')->label('确认密码')->passwordInput() ?>
-                        </div>
-                        <div class="col-lg-12 pt-5">
-                            <?= Html::submitButton('注册', ['class' => 'btn custom-btn md-size', 'name' => 'login-button']) ?>
-                        </div>
-                    </div>
-                    <?php ActiveForm::end(); ?>
-                </div>
             </div>
         </div>
     </div>
-    <!-- login | register area end -->
+    <!-- login | Signup area end -->
 
 
 </body>

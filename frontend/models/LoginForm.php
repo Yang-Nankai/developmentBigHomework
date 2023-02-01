@@ -14,12 +14,6 @@ class LoginForm extends Model
     public $username;
     public $password;
     public $rememberMe = true;
-    
-    /* register */
-    public $re_username;
-    public $re_email;
-    public $re_password;
-    public $re_password_re;
 
     private $_user;
 
@@ -29,17 +23,6 @@ class LoginForm extends Model
      */
     public function rules()
     {
-            // return [
-            //     /* register */
-            //     // re_username and re_email and re_password and re_password_re are both required
-            //     [['re_username', 're_email', 're_password', 're_password_re'], 'required'],
-            //     // re_password is validated by validatePassword()
-            //     ['re_password', 'validatePassword'],
-            //     // re_password_re is validated by validatePassword()
-            //     ['re_password_re', 'validatePassword'],
-            //     // re_email is validated by email
-            //     ['re_email', 'email'],
-            // ];
         return [
             // username and password are both required
             [['username', 'password'], 'required'],
@@ -49,6 +32,15 @@ class LoginForm extends Model
             ['password', 'validatePassword'],
         ];
     }
+
+    // //场景设置
+    // public function scenarios()
+    // {
+    //     return [
+    //         'login' => ['username', 'password', 'rememberMe'],
+    //         'register' => ['re_username', 're_email', 're_password', 're_password_re'],
+    //     ];
+    // }
 
     /**
      * Validates the password.
@@ -77,9 +69,9 @@ class LoginForm extends Model
         if ($this->validate()) {
             return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
         }
-        
         return false;
     }
+    
 
     /**
      * Finds user by [[username]]

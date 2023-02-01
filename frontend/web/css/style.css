@@ -443,33 +443,6 @@ figure {
 }
 
 /*-- 
-    - Input Placeholder
------------------------------------------*/
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-/*-- 
     Scroll Up 
 -----------------------------------------*/
 #scrollUp {
@@ -4800,7 +4773,6 @@ textarea:-ms-input-placeholder {
   font-weight: 600;
   display: inline-block;
   text-transform: uppercase;
-  float: right;
   text-decoration: underline;
 }
 
@@ -9570,7 +9542,6 @@ span.ui-slider-handle.ui-corner-all.ui-state-default {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  float: left;
   font-size: 12px;
   height: 40px;
   line-height: 40px;
@@ -9983,4 +9954,54 @@ span.ui-slider-handle.ui-corner-all.ui-state-default {
   height: 35px;
   float: left;
   margin: .2em 0 0;
+}
+
+/* 注册和登录显示 */
+#login-head {
+  color: red;
+}
+
+#signup-head {
+  color: red;
+}
+
+.login-register-head h1 {
+  display: inline;
+}
+
+/*pagination样式 */
+ul.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+ul.pagination li {
+  display: inline;
+}
+
+ul.pagination li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+ul.pagination li.active a {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.comment-btn {
+  width: 100%;
+  height: 100%;
+  color: white !important;
 }

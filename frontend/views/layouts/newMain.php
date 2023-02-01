@@ -189,7 +189,6 @@ AppAsset::register($this);
                                     )
                                     . Html::endForm();
                             } ?>
-                                <!-- <li class="header_wishlist"><?php echo Html::a('',['/site/login'],['class' => ['pe-7s-user']]); ?></li> -->
                             </ul>
                             <div class="canvas_open">
                                 <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
