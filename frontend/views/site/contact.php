@@ -60,8 +60,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="col-lg-5 col-md-6">
                         <div class="contact_form" data-bgimg="img/others/contact-form-bg-shape.png">
                             <h2>发送建议</h2>
+                            <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
                             <!-- 这里应该去天上发送表单后的动作，就是将发送的信息存入到数据库然后在后台能够显示出来 -->
-                            <form id="contact-form" action="https://whizthemes.com/mail-php/other/mail.php">
+                            <!-- <form id="contact-form" action="https://whizthemes.com/mail-php/other/mail.php">
                                 <div class="form_input">
                                     <input name="con_name" placeholder="Name*" type="text">
                                 </div>
@@ -78,7 +79,24 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <button type="submit" class="btn btn-link">send message</button>
                                 </div>
                                 <p class="form-message"></p>
-                            </form>
+                            </form> -->
+                            <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'placeholder' => 'Name*']) ?>
+
+                            <?= $form->field($model, 'email')->textInput(['placeholder' => 'E-Mail']) ?>
+
+                            <?= $form->field($model, 'subject')->textInput(['placeholder' => 'Subject']) ?>
+
+                            <?= $form->field($model, 'body')->textarea(['rows' => 6, 'placeholder' => 'Message Here']) ?>
+                            
+                            <?= $form->field($model, 'verifyCode')->widget(Captcha::class, [
+                                'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+                            ]) ?>
+
+                            <div class="form_input_btn">
+                                <?= Html::submitButton('Send Message', ['class' => 'btn btn-link', 'name' => 'contact-button']) ?>
+                            </div>
+                            <?php ActiveForm::end(); ?>
+
                         </div>
                     </div>
                 </div>

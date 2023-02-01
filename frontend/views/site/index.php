@@ -38,7 +38,11 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
     <!--slider area end-->
 
     <!-- service section start-->
-    <div class="service_section mb-86">
+    <div id="down" class="service_section mb-86">
+        <div class="section_title text-center mb-55">
+            <h2>战场数据</h2>
+            <p>更新于2023/01/28</p>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -126,7 +130,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
     <!-- banner section  end -->
 
     <!-- product section start -->
-    <div id="down" class="product_section mb-80 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+    <div class="product_section mb-80 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
         <div class="container">
             <div class="product_header">
                 <div class="section_title text-center">
@@ -170,28 +174,21 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                     <div class="recent-post-info"><a class="article-title" href="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/"
                         title="第一阶段" data-pjax-state="" _msttexthash="101059543" _msthash="46">第一阶段</a>
                       <div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i>
-                          <font _mstmutation="1" _msttexthash="7042230" _msthash="47"><span class="sticky" _mstmutation="1"
-                              _istranslated="1">置顶</span><span class="article-meta-separator" _mstmutation="1"
-                              _istranslated="1">|</span></font>
-                        </span><span class="post-meta-date"><i class="far fa-calendar-alt"></i>
-                          <font _mstmutation="1" _msttexthash="8030464" _msthash="48"><span class="article-meta-label"
-                              _mstmutation="1" _istranslated="1">发表于</span><time datetime="2020-05-28T14:31:46.000Z"
+                        </span><span class="post-meta-date"><i class="far fa-calendar-alt"></i>发表于</span><time datetime="2020-05-28T14:31:46.000Z"
                               title="發表於 2020-05-28 22:31:46" style="display: inline;" _mstmutation="1"
-                              _istranslated="1">2020-05-28</time></font>
+                              _istranslated="1">2020-05-28</time>
                         </span><span class="article-meta">
-                          <font _mstmutation="1" _msttexthash="8631441" _msthash="49"><span class="article-meta-separator"
-                              _mstmutation="1" _istranslated="1">|</span> <a class="article-meta__categories"
+                          |</span> <a class="article-meta__categories"
                               href="https://butterfly.js.org/categories/Docs%E6%96%87%E6%AA%94/" data-pjax-state="" _mstmutation="1"
-                              _istranslated="1">Docs文档</a></font><i class="fas fa-inbox"></i>
+                              _istranslated="1">Docs文档</a><i class="fas fa-inbox"></i>
                         </span><span class="article-meta">
-                          <font _mstmutation="1" _msttexthash="11606868" _msthash="0">
-                            <font _mstmutation="1" _msttexthash="11600004" _msthash="50" _istranslated="1"><span
+                         <span
                                 class="article-meta-separator" _mstmutation="1" _istranslated="1">|</span> <span
-                                class="article-meta-label" _mstmutation="1" _istranslated="1">条评论</span></font> <a
+                                class="article-meta-label" _mstmutation="1" _istranslated="1">条评论</span> <a
                               href="https://butterfly.js.org/posts/21cfbf15/#post-comment" data-pjax-state="" _mstmutation="1"
                               _istranslated="1"><span class="waline-comment-count" id="/posts/21cfbf15/" _msttexthash="4368"
                                 _msthash="239" _istranslated="1">0</span></a>
-                          </font><i class="fas fa-comments"></i>
+                         <i class="fas fa-comments"></i>
                         </span></div>
                       <div class="content" _msttexthash="13490180405" _msthash="51">
                       从1月初到2月中，俄罗斯以志愿军形式援助卢甘斯克，同乌克兰政府军交火，后范围扩大到顿涅斯克，随着乌方不断增兵，对两地首府的争夺日趋激烈，以致俄军不得不从本土打击乌军，形成对峙后，顿巴斯和哈尔科夫等地区谋求独立并请求俄罗斯提供安全保障</div>

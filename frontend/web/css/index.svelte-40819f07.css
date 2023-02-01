@@ -218,3 +218,25 @@ section.body-text h2:after {
     width: 100px;
     margin: 10px auto 2rem
 }
+
+.section_title p {
+    font-family: freight-book, serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.3rem;
+    line-height: 2.1rem
+}
+
+.section_title h2 {
+    margin: 4rem 0 2rem;
+    text-align: center;
+    font-weight: 600
+}
+
+.section_title h2:after {
+    display: block;
+    content: "";
+    background: #666666;
+    height: 3px;
+    width: 100px;
+    margin: 10px auto 2rem
+}

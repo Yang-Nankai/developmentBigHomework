@@ -7,7 +7,7 @@
 use yii\bootstrap5\Html;
 use yii\bootstrap5\ActiveForm;
 
-$this->title = 'Login-Register';
+$this->title = 'Login-Signup';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <!doctype html>
@@ -19,11 +19,11 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="breadcrumbs_text">
-                        <h1>登录 | 注册</h1>
+                    <div class="breadcrumbs_text login-register-head">
+                        <h1 id="login-head">登录</h1><h1> | 注册</h1>
                         <ul>
                             <li><?php echo Html::a('HOME',['/site/index']); ?></li>
-                            <li> // Login | Register</li>
+                            <li> // <?php echo Html::a('Login',['/site/login']); ?> | <?php echo Html::a('Signup',['/site/signup']); ?></li>
                         </ul>
                     </div>
                 </div>
@@ -32,73 +32,44 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <!-- breadcrumbs area end -->
 
-    <!-- login | register area begin -->
+    <!-- login | Signup area begin -->
     <div class="login-register-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <form action="#">
-                        <div class="login-form">
-                            <h4 class="login-title">登录</h4>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <label>用户名*</label>
-                                    <input type="text" placeholder="Username">
-                                </div>
-                                <div class="col-lg-12">
-                                    <label>密码</label>
-                                    <input type="password" placeholder="Password">
-                                </div>
-                                <div class="col-sm-8 align-self-center">
-                                    <div class="check-box">
-                                        <input type="checkbox" id="remember_me">
-                                        <label for="remember_me">记住我</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 pt-1 mt-md-0">
-                                    <div class="forgotton-password_info">
-                                    <?php echo Html::a('忘记密码?',['/site/request-password-reset']); ?>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 pt-5">
-                                    <button class="btn custom-btn md-size">登录</button>
-                                </div>
+                    <?php $form = ActiveForm::begin([
+                        'options' => [
+                            'class'=>'login-form'
+                        ]
+                    ]); ?>
+                    <h4 class="login-title">登录</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <?= $form->field($model, 'username')->label('用户名*')->textInput(['autofocus' => true]) ?>
+                        </div>
+                        <div class="col-lg-12">
+                            <?= $form->field($model, 'password')->label('密码*')->passwordInput() ?>
+                        </div>
+                        <div class="col-sm-8 align-self-center">
+                            <div class="check-box">
+                                <?= $form->field($model, 'rememberMe')->label('记住我')->checkbox() ?>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="col-lg-6 pt-5 pt-lg-0">
-                    <form action="#">
-                        <div class="login-form">
-                            <h4 class="login-title">注册</h4>
-                            <div class="row">
-                                <div class="col-md-6 col-12">
-                                    <label>用户名*</label>
-                                    <input type="text" placeholder="Username">
-                                </div>
-                                <div class="col-md-12">
-                                    <label>邮箱地址*</label>
-                                    <input type="email" placeholder="Email Address">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>密码</label>
-                                    <input type="password" placeholder="Password">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>确认密码</label>
-                                    <input type="password" placeholder="Confirm Password">
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn custom-btn md-size">Register</button>
-                                </div>
+                        <div class="col-sm-4 pt-1 mt-md-0">
+                            <div class="forgotton-password_info">
+                                <?php echo Html::a('忘记密码?',['/site/request-password-reset']); ?>
                             </div>
                         </div>
-                    </form>
+                        <div class="col-lg-12 pt-5">
+                            <?= Html::submitButton('登录', ['class' => 'btn custom-btn md-size', 'name' => 'login-button']) ?>
+                        </div>
+                    </div>
+                    <?php ActiveForm::end(); ?>
                 </div>
             </div>
         </div>
     </div>
-    <!-- login | register area end -->
+    <!-- login | Signup area end -->
 
 
 </body>

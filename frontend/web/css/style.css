@@ -443,33 +443,6 @@ figure {
 }
 
 /*-- 
-    - Input Placeholder
------------------------------------------*/
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-/*-- 
     Scroll Up 
 -----------------------------------------*/
 #scrollUp {
@@ -4800,7 +4773,6 @@ textarea:-ms-input-placeholder {
   font-weight: 600;
   display: inline-block;
   text-transform: uppercase;
-  float: right;
   text-decoration: underline;
 }
 
@@ -9570,7 +9542,6 @@ span.ui-slider-handle.ui-corner-all.ui-state-default {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  float: left;
   font-size: 12px;
   height: 40px;
   line-height: 40px;
@@ -9864,4 +9835,173 @@ span.ui-slider-handle.ui-corner-all.ui-state-default {
   width: 100%;
   border: 1px solid transparent;
   cursor: pointer;
+}
+
+/*----------------------------------------*/
+/*  21-comment
+/*----------------------------------------*/
+
+
+.comment-container .summary-text {
+  font-weight: 300 !important;
+  letter-spacing: 1px !important;
+  line-height: 1.8 !important;
+
+  font-weight: 300 !important;
+
+}
+
+.summary-text:hover {
+  cursor: pointer;
+}
+
+.comment-container .me-a {
+  text-decoration: none;
+}
+
+.comment-container #noteEdit textarea {
+  border: #ccc solid 3px;
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+.comment-container .divier {
+  border-top: 1px solid rgba(34, 36, 38, .15);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top-color: rgba(34, 36, 38, .15) !important;
+  border-left-color: rgba(34, 36, 38, .15) !important;
+  border-bottom-color: rgba(255, 255, 255, .15) !important;
+  border-right-color: rgba(255, 255, 255, .15) !important;
+  color: white;
+}
+
+/*复选框开关样式*/
+.comment-container .switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+}
+
+.comment-container .switch input {
+  display: none;
+}
+
+.comment-container .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.comment-container .slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 10px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.comment-container input:checked+.slider {
+  background-color: red;
+}
+
+.comment-container input:focus+.slider {
+  box-shadow: 0 0 1px red;
+}
+
+.comment-container .btn-info {
+  background-color: red;
+  border-color: red;
+}
+
+.comment-container .text-info {
+  color: red !important;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.comment-container input:checked+.slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+.comment-container .slider.round {
+  border-radius: 34px;
+}
+
+.comment-container .slider.round:before {
+  border-radius: 50%;
+}
+
+/****************/
+.comment-container .comment .avatar {
+  display: block;
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin: .2em 0 0;
+}
+
+/* 注册和登录显示 */
+#login-head {
+  color: red;
+}
+
+#signup-head {
+  color: red;
+}
+
+.login-register-head h1 {
+  display: inline;
+}
+
+/*pagination样式 */
+ul.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+ul.pagination li {
+  display: inline;
+}
+
+ul.pagination li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+ul.pagination li.active a {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.comment-btn {
+  width: 100%;
+  height: 100%;
+  color: white !important;
 }
