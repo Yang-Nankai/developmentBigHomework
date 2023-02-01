@@ -2687,8 +2687,8 @@ textarea:-ms-input-placeholder {
 }
 
 .single_services {
-  margin-right: 30px;
-  padding: 35px 30px 35px 0;
+  margin: 0px 40px;
+  padding: 35px 70px 35px 0;
   border-right: 1px solid #eeeeee;
   display: -webkit-box;
   display: -ms-flexbox;

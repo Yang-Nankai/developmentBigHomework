@@ -12,7 +12,6 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
 <html class="no-js" lang="zxx">
 
 <body>
-
     <!--slide banner section start-->
     <div class="hero_banner_section d-flex align-items-center mb-110">
         <div class="container">
@@ -47,40 +46,40 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                         <div class="single_services one text-center wow fadeInUp" data-wow-delay="0.1s"
                             data-wow-duration="1.1s">
                             <div class="services_thumb">
-                                <img src="img/others/data1.png" alt="">
+                                <img src="img/others/11 (1).png" alt="">
                             </div>
                             <div class="services_content">
-                                <h3><a href="shop-left-sidebar.html">累计冲突事件</a></h3>
+                                <h3>累计冲突事件</a></h3>
                                 <p>35,294 件</p>
                             </div>
                         </div>
                         <div class="single_services two text-center wow fadeInUp" data-wow-delay="0.2s"
                             data-wow-duration="1.2s">
                             <div class="services_thumb">
-                                <img src="img/others/data2.png" alt="">
+                                <img src="img/others/11 (2).png" alt="">
                             </div>
                             <div class="services_content">
-                                <h3><a href="shop-left-sidebar.html">俄方伤亡人数</a></h3>
+                                <h3>俄方伤亡人数</a></h3>
                                 <p>12.5 万人</p>
                             </div>
                         </div>
                         <div class="single_services three text-center wow fadeInUp" data-wow-delay="0.3s"
                             data-wow-duration="1.3s">
                             <div class="services_thumb">
-                                <img src="img/others/data3.png" alt="">
+                                <img src="img/others/11 (3).png" alt="">
                             </div>
                             <div class="services_content">
-                                <h3><a href="shop-left-sidebar.html">累计平民伤亡</a></h3>
+                                <h3>累计平民伤亡</a></h3>
                                 <p>18483 人</p>
                             </div>
                         </div>
                         <div class="single_services four text-center wow fadeInUp" data-wow-delay="0.4s"
                             data-wow-duration="1.4s">
                             <div class="services_thumb">
-                                <img src="img/others/data4.png" alt="">
+                                <img src="img/others/11 (4).png" alt="">
                             </div>
                             <div class="services_content">
-                                <h3><a href="shop-left-sidebar.html">乌方伤亡人数</a></h3>
+                                <h3>乌方伤亡人数</a></h3>
                                 <p>10 万人</p>
                             </div>
                         </div>
@@ -98,7 +97,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                 <div class="col-lg-6 col-md-6">
                     <div class="single_banner wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
                         <div class="banner_thumb">
-                            <a href="#"><img src="img/bg/1.png" alt=""></a>
+                            <img src="https://www.reuters.com/graphics/USA-WEATHER/EXPLAINER/jnpwywglapw/cdn/images/share-card.jpg" alt="" style="filter:opacity(0.5);">
                             <div class="banner_text">
                                 <!-- <h3><span>70%</span> Sale Off</h3> -->
                                 <h2>Ukraine <br>
@@ -111,7 +110,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                 <div class="col-lg-6 col-md-6">
                     <div class="single_banner wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
                         <div class="banner_thumb">
-                            <a href="#"><img src="img/bg/2.png" alt=""></a>
+                            <a href="#"><img src="https://www.reuters.com/graphics/BRAZIL-POLITICS/RIOTS/gkplwxqggvb/cdn/images/share-card.jpg" alt="" style="filter:opacity(0.5);"></a>
                             <div class="banner_text">
                                 <!-- <h3><span>25%</span> Sale Off</h3> -->
                                 <h2>Russia <br>
@@ -133,7 +132,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                 <div class="section_title text-center">
                     <h2>俄乌战争五大阶段</h2>
                 </div>
-                <div class="product_tab_button">
+                <!-- <div class="product_tab_button">
                     <ul class="nav justify-content-center" role="tablist" id="nav-tab">
                         <li>
                             <a class="active" data-toggle="tab" href="#features" role="tab" aria-controls="features"
@@ -156,19 +155,19 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                                 aria-selected="false">第五阶段 </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
-            <!-- 俄乌战争四大阶段 -->
+            <!-- 俄乌战争五大阶段 -->
             <main class="layout" id="content-inner">
                 <div class="recent-posts" id="recent-posts">
                   <div class="recent-post-item">
                     <div class="post_cover"><a href="https://butterfly.js.org/posts/21cfbf15/" title="Butterfly 安裝文檔(一) 快速開始"
                         data-pjax-state=""><img class="post-bg entered error"
-                          src="./Butterfly - A Simple and Card UI Design theme for Hexo_files/404.jpg"
+                          src="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/cdn/images/321/RC2VVT9M0VHQ.JPG"
                           data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-01-cover.png"
                           onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" alt="Butterfly 安装文档（一） 快速开始"
                           data-ll-status="error" _mstalt="101059543" _msthash="45"></a></div>
-                    <div class="recent-post-info"><a class="article-title" href="https://butterfly.js.org/posts/21cfbf15/"
+                    <div class="recent-post-info"><a class="article-title" href="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/"
                         title="第一阶段" data-pjax-state="" _msttexthash="101059543" _msthash="46">第一阶段</a>
                       <div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i>
                           <font _mstmutation="1" _msttexthash="7042230" _msthash="47"><span class="sticky" _mstmutation="1"
@@ -194,21 +193,17 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                                 _msthash="239" _istranslated="1">0</span></a>
                           </font><i class="fas fa-comments"></i>
                         </span></div>
-                      <div class="content" _msttexthash="13490180405" _msthash="51">📖
-                        本教程更新于2023年01月18日，教程的内容针对最新稳定版而更新（如果你是旧版，教程会有些出入，请留意） 🦋 Butterfly已经更新到4.6.1 📚文档目录🚀快速开始 - 📑 主题页面 - 🛠
-                        主题配置-1 - ⚔️ 主题配置-2 - ❓ 主题问答 - ⚡️ 进阶教程 - ✨ 更新日志 - 🤞 打赏 你可以通过右下角的 简 按钮切换为简体显示 hexo-theme-butterfly是基于
-                        hexo-theme-melody 的基础上进行开发的。 安装Git安装 （Github）Git安装 （Gitee）npm安装稳定版【建议】 在你的 Hexo 根目录里 1git clone -b master
-                        https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly 测试版 测试版可能存在 bug，追求稳定的请安装稳定版 如果想要安装比较新的
-                        dev 分支，可以 1git clone -b dev https://github.com/je ...</div>
+                      <div class="content" _msttexthash="13490180405" _msthash="51">
+                      从1月初到2月中，俄罗斯以志愿军形式援助卢甘斯克，同乌克兰政府军交火，后范围扩大到顿涅斯克，随着乌方不断增兵，对两地首府的争夺日趋激烈，以致俄军不得不从本土打击乌军，形成对峙后，顿巴斯和哈尔科夫等地区谋求独立并请求俄罗斯提供安全保障</div>
                     </div>
                   </div>
                   <div class="recent-post-item">
                     <div class="post_cover"><a href="https://butterfly.js.org/posts/ea33ab97/" title="自定義側邊欄" data-pjax-state=""><img
-                          class="post-bg entered error" src="./Butterfly - A Simple and Card UI Design theme for Hexo_files/404.jpg"
+                          class="post-bg entered error" src="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/cdn/images/322/RC2SRT92LVOQ.JPG"
                           data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/aside-diy-cover.png"
                           onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" alt="自定义侧边栏" data-ll-status="error"
                           _mstalt="19877988" _msthash="52"></a></div>
-                    <div class="recent-post-info"><a class="article-title" href="https://butterfly.js.org/posts/ea33ab97/"
+                    <div class="recent-post-info"><a class="article-title" href="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/"
                         title="第二阶段" data-pjax-state="" _msttexthash="19877988" _msthash="53">第二阶段</a>
                       <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i>
                           <font _mstmutation="1" _msttexthash="8028293" _msthash="54"><span class="article-meta-label"
@@ -230,21 +225,17 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                                 _msthash="238" _istranslated="1">0</span></a>
                           </font><i class="fas fa-comments"></i>
                         </span></div>
-                      <div class="content" _msttexthash="5494571732" _msthash="57">适用于&gt;= 3.8.0 侧边栏现在支持自定义了，可以添加自己喜欢的 widget。 可添加自己的
-                        widget，也可以对现有的 widget 进行排序（博客资料和 公告这两个固定，其它的能排序） widget 排序只需要配置 sort_order就行。 （使用了 Flex 布局的 order 属性，具体可查看
-                        mozilla 文档。 简单来讲，就是配置数字来实现排序，如果不配置，则默认为 0。 数字越小，排序越靠前。 12345678910111213141516aside: ... card_recent_post:
-                        sort_order: # Don't modify the setting unless you know how it works card_categories: sort_order: # Don't
-                        modify the setting unless you know how it works card_tags: sort_order: # Don't modify the setting ...</div>
+                      <div class="content" _msttexthash="5494571732" _msthash="57">从2.24到3.25日，俄罗斯亲自登场闪击乌克兰，空降基辅的同时，大部队迂回包抄顿巴斯正面乌军，一时间仿佛看到了俄军轻松接管克里米亚的场景，然而接下来的场景让人大跌眼镜，大量装甲车和坦克在基辅外围浓烟滚滚，争夺基辅机场的战斗更是拉垮，俄军的技战术居然停留在二战水准，同时基辅保卫战的成功也让乌克兰看到了希望，让北约嗅到了机会，战场陷入僵局</div>
                     </div>
                   </div>
                   <div class="recent-post-item">
                     <div class="post_cover left"><a href="https://butterfly.js.org/posts/c9711c19/" title="當設置 top_img 為 false 時"
                         data-pjax-state=""><img class="post-bg entered error"
-                          src="./Butterfly - A Simple and Card UI Design theme for Hexo_files/404.jpg"
+                          src="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/cdn/images/322/RC2FQT9UM5VV.JPG"
                           data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/when-set-the-top-img-to-false.png"
                           onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" alt="当设置 top_img为 false 时"
                           data-ll-status="error" _mstalt="22250644" _msthash="58"></a></div>
-                    <div class="recent-post-info"><a class="article-title" href="https://butterfly.js.org/posts/c9711c19/"
+                    <div class="recent-post-info"><a class="article-title" href="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/"
                         title="第三阶段" data-pjax-state="" _msttexthash="22250644" _msthash="59">第三阶段</a>
                       <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i>
                           <font _mstmutation="1" _msttexthash="8029619" _msthash="60"><span class="article-meta-label"
@@ -266,17 +257,17 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                                 _msthash="237" _istranslated="1">0</span></a>
                           </font><i class="fas fa-comments"></i>
                         </span></div>
-                      <div class="content" _msttexthash="105732731" _msthash="63">当设置 top_img 为 false 时，不显示顶部图</div>
+                      <div class="content" _msttexthash="105732731" _msthash="63">从四月到七月，俄军被迫改变策略，从基辅等地撤离，转而加大顿巴斯攻势，乌东对决正式开始！马里乌波尔，俄乌第一场硬仗，双方伤亡惨重，由于克里米亚的存在，乌军腹背受敌，最终部分被围钢铁厂，吸取了基辅的冒进教训，这一阶段俄军打的比较稳，特别一提的是，钢铁厂的北约人员本可以成为结束战争的谈判资本，俄罗斯一等再等没有结果，战争继续。缺乏重装备的乌军无力抵抗地面坦克加重炮，天空武装直升机加空袭的俄军，节节败退。不久俄罗斯打通了一条本土通往克里米亚的陆路通道，绍伊古一战成名，泽连斯基不断求和、寻求谈判，克里姆林宫少有回应</div>
                     </div>
                   </div>
                   <div class="recent-post-item">
                     <div class="post_cover left"><a href="https://butterfly.js.org/posts/c9711c19/" title="當設置 top_img 為 false 時"
                         data-pjax-state=""><img class="post-bg entered error"
-                          src="./Butterfly - A Simple and Card UI Design theme for Hexo_files/404.jpg"
+                          src="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/cdn/images/321/RC2NRT9EBD4T.JPG"
                           data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/when-set-the-top-img-to-false.png"
                           onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" alt="当设置 top_img为 false 时"
                           data-ll-status="error" _mstalt="22250644" _msthash="58"></a></div>
-                    <div class="recent-post-info"><a class="article-title" href="https://butterfly.js.org/posts/c9711c19/"
+                    <div class="recent-post-info"><a class="article-title" href="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/"
                         title="第四阶段" data-pjax-state="" _msttexthash="22250644" _msthash="59">第四阶段</a>
                       <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i>
                           <font _mstmutation="1" _msttexthash="8029619" _msthash="60"><span class="article-meta-label"
@@ -298,17 +289,17 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                                 _msthash="237" _istranslated="1">0</span></a>
                           </font><i class="fas fa-comments"></i>
                         </span></div>
-                      <div class="content" _msttexthash="105732731" _msthash="63">当设置 top_img 为 false 时，不显示顶部图</div>
+                      <div class="content" _msttexthash="105732731" _msthash="63">北约全面制裁俄罗斯，封杀卢布，秘密向乌克兰提供巨量武器、资金、培训，俄军攻势放缓，本土频频遭袭，泽连斯基彻底站稳脚跟，30比1的战斗拉开序幕，一线战斗进入白热化拼杀阶段，整个乌东俨然成了北约武器试验场，无人机和黑客的加入让缺乏现代战争框架的俄军难以招架，常规力量极速消耗，不得不祭出核大棒。双方围绕赫尔松和顿涅斯克展开争夺</div>
                     </div>
                   </div>
                   <div class="recent-post-item">
                     <div class="post_cover left"><a href="https://butterfly.js.org/posts/c9711c19/" title="當設置 top_img 為 false 時"
                         data-pjax-state=""><img class="post-bg entered error"
-                          src="./Butterfly - A Simple and Card UI Design theme for Hexo_files/404.jpg"
+                          src="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/cdn/images/321/RC2QVT91ZCRE.JPG"
                           data-lazy-src="https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/when-set-the-top-img-to-false.png"
                           onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" alt="当设置 top_img为 false 时"
                           data-ll-status="error" _mstalt="22250644" _msthash="58"></a></div>
-                    <div class="recent-post-info"><a class="article-title" href="https://butterfly.js.org/posts/c9711c19/"
+                    <div class="recent-post-info"><a class="article-title" href="https://www.reuters.com/graphics/UKRAINE-CRISIS/zdpxokdxzvx/"
                         title="第五阶段" data-pjax-state="" _msttexthash="22250644" _msthash="59">第五阶段</a>
                       <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i>
                           <font _mstmutation="1" _msttexthash="8029619" _msthash="60"><span class="article-meta-label"
@@ -330,7 +321,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                                 _msthash="237" _istranslated="1">0</span></a>
                           </font><i class="fas fa-comments"></i>
                         </span></div>
-                      <div class="content" _msttexthash="105732731" _msthash="63">当设置 top_img 为 false 时，不显示顶部图</div>
+                      <div class="content" _msttexthash="105732731" _msthash="63">9月3日到10月10日晚，随着乌东四州公投入俄，北约再次加大了援助力度，乌克兰也加大了攻势，哈尔科夫乌军炮击俄罗斯别尔哥罗德村庄，炸毁刻赤大桥，一系列动作让俄罗斯谈判结束争端的希望破灭，从“特别军事行动”转变到反恐行动，再到马上要宣布的全面开战</div>
                     </div>
                   </div>
                 </div>
@@ -777,7 +768,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                     <article class="single_product">
                         <figure>
                             <div class="product_thumb">
-                                <a href="single-product.html"><img src="img/product/product1.png" alt=""></a>
+                                <a href="single-product.html"><img src="img/product/1.png" alt=""></a>
                                 <div class="action_links">
                                     <ul class="d-flex justify-content-center">
                                         <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
@@ -803,7 +794,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                     <article class="single_product">
                         <figure>
                             <div class="product_thumb">
-                                <a href="single-product.html"><img src="img/product/product2.png" alt=""></a>
+                                <a href="single-product.html"><img src="img/product/2.png" alt=""></a>
                                 <div class="action_links">
                                     <ul class="d-flex justify-content-center">
                                         <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
@@ -829,7 +820,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                     <article class="single_product">
                         <figure>
                             <div class="product_thumb">
-                                <a href="single-product.html"><img src="img/product/product3.png" alt=""></a>
+                                <a href="single-product.html"><img src="img/product/3.png" alt=""></a>
                                 <div class="action_links">
                                     <ul class="d-flex justify-content-center">
                                         <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
@@ -855,7 +846,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                     <article class="single_product">
                         <figure>
                             <div class="product_thumb">
-                                <a href="single-product.html"><img src="img/product/product4.png" alt=""></a>
+                                <a href="single-product.html"><img src="img/product/4.png" alt=""></a>
                                 <div class="action_links">
                                     <ul class="d-flex justify-content-center">
                                         <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
@@ -881,7 +872,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                     <article class="single_product">
                         <figure>
                             <div class="product_thumb">
-                                <a href="single-product.html"><img src="img/product/product5.png" alt=""></a>
+                                <a href="single-product.html"><img src="img/product/5.png" alt=""></a>
                                 <div class="action_links">
                                     <ul class="d-flex justify-content-center">
                                         <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
@@ -898,84 +889,6 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                                 <!-- <h4><a href="single-product.html">Atque earum ullam non.</a></h4>
                                 <div class="price_box">
                                     <span class="current_price">$35.00</span>
-                                </div> -->
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-3">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a href="single-product.html"><img src="img/product/product6.png" alt=""></a>
-                                <div class="action_links">
-                                    <ul class="d-flex justify-content-center">
-                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
-                                                    class="pe-7s-shopbag"></span></a></li>
-                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
-                                                    class="pe-7s-like"></span></a></li>
-                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
-                                                data-bs-target="#modal_box">
-                                                <span class="pe-7s-look"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <figcaption class="product_content text-center">
-                                <!-- <h4><a href="single-product.html">Modi excepturi ut ipsam.</a></h4>
-                                <div class="price_box">
-                                    <span class="current_price">$38.00</span>
-                                </div> -->
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-3">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a href="single-product.html"><img src="img/product/product7.png" alt=""></a>
-                                <div class="action_links">
-                                    <ul class="d-flex justify-content-center">
-                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
-                                                    class="pe-7s-shopbag"></span></a></li>
-                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
-                                                    class="pe-7s-like"></span></a></li>
-                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
-                                                data-bs-target="#modal_box">
-                                                <span class="pe-7s-look"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <figcaption class="product_content text-center">
-                                <!-- <h4><a href="single-product.html">Provident odio, are Unde.</a></h4>
-                                <div class="price_box">
-                                    <span class="current_price">$28.00</span>
-                                </div> -->
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-3">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a href="single-product.html"><img src="img/product/product1.png" alt=""></a>
-                                <div class="action_links">
-                                    <ul class="d-flex justify-content-center">
-                                        <li class="add_to_cart"><a href="cart.html" title="Add to cart"> <span
-                                                    class="pe-7s-shopbag"></span></a></li>
-                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
-                                                    class="pe-7s-like"></span></a></li>
-                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
-                                                data-bs-target="#modal_box">
-                                                <span class="pe-7s-look"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <figcaption class="product_content text-center">
-                                <!-- <h4><a href="single-product.html">Products Name Here</a></h4>
-                                <div class="price_box">
-                                    <span class="current_price">$22.00</span>
                                 </div> -->
                             </figcaption>
                         </figure>
@@ -1015,15 +928,15 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                 <div class="col-lg-4">
                     <div class="single_blog wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
                         <div class="blog_thumb">
-                            <a href="blog-detail-left-sidebar.html"><img src="img/blog/blog1.png" alt=""></a>
+                            <img src="https://www.reuters.com/graphics/UKRAINE-CRISIS/FOOD/zjvqkgomjvx/cdn/images/sharecard.png" alt="">
                         </div>
                         <div class="blog_content">
                             <div class="blog_arrow_btn">
-                                <a href="blog-detail-left-sidebar.html"><i class="ion-arrow-right-c"></i></a>
+                                <?php echo Html::a('',['/site/blog-detail']); ?>
+                                <i class="ion-arrow-right-c"></i>
                             </div>
                             <span>Brakery</span>
-                            <h3><a href="blog-detail-left-sidebar.html">Lorem ipsum doloril
-                                    sit amet consepy.</a></h3>
+                            <h3>The war in Ukraine is fuelling a global food crisis</h3>
                             <div class="blog__meta d-flex align-items-center">
                                 <div class="blog__meta__thumb">
                                     <img src="img/others/meta-img1.png" alt="">
@@ -1041,15 +954,14 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                 <div class="col-lg-4">
                     <div class="single_blog wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
                         <div class="blog_thumb">
-                            <a href="blog-detail-left-sidebar.html"><img src="img/blog/blog2.png" alt=""></a>
+                            <a href="blog-detail-left-sidebar.html"><img src="https://www.reuters.com/graphics/UKRAINE-CRISIS/CIVILIANS/zgpomygqmpd/cdn/images/share-card.jpg" alt=""></a>
                         </div>
                         <div class="blog_content">
                             <div class="blog_arrow_btn">
                                 <a href="blog-detail-left-sidebar.html"><i class="ion-arrow-right-c"></i></a>
                             </div>
                             <span class="color2">Brakery</span>
-                            <h3><a href="blog-detail-left-sidebar.html">Lorem ipsum dolor sit, elit,
-                                    dolores is .</a>
+                            <h3><a href="blog-detail-left-sidebar.html">Under fire: Civilian lives and homes destroyed by the conflict</a>
                             </h3>
                             <div class="blog__meta d-flex align-items-center">
                                 <div class="blog__meta__thumb">
@@ -1068,15 +980,14 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                 <div class="col-lg-4">
                     <div class="single_blog wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">
                         <div class="blog_thumb">
-                            <a href="blog-detail-left-sidebar.html"><img src="img/blog/blog3.png" alt=""></a>
+                            <a href="blog-detail.html"><img src="https://www.reuters.com/graphics/UKRAINE-CRISIS/WEAPONS/lbvgnzdnlpq/cdn/images/share-card.jpg" alt=""></a>
                         </div>
                         <div class="blog_content">
                             <div class="blog_arrow_btn">
                                 <a href="blog-detail-left-sidebar.html"><i class="ion-arrow-right-c"></i></a>
                             </div>
                             <span class="color3">Brakery</span>
-                            <h3><a href="blog-detail-left-sidebar.html"> harum dolorum culpa quas are
-                                    veniam</a></h3>
+                            <h3><a href="blog-detail-left-sidebar.html">Weapons of the war in Ukraine</a></h3>
                             <div class="blog__meta d-flex align-items-center">
                                 <div class="blog__meta__thumb">
                                     <img src="img/others/meta-img3.png" alt="">
