@@ -1,228 +1,103 @@
 <?php
-/**
- * Desc: 权限管理 RBAC 控制器
- * Created by PhpStorm.
- * User: shantong
- * Date: 2018/06/25
- * Time: 15:30
- */
-
 namespace backend\controllers;
 
-
-use backend\services\permission\PermissionService;
-use backend\services\setting\SettingService;
-use common\helpers\Helpers;
-use yii\filters\VerbFilter;
+use backend\models\Permission;
 use Yii;
+use yii\helpers\Url;
+use yii\web\NotFoundHttpException;
 
-class PermissionController extends AdminLogController
+class PermissionController extends BaseController
 {
-	public function behaviors()
-	{
-		return array_merge(
-			parent::behaviors(),
-			[
-				'verbs' => [
-					'class' => VerbFilter::className(),
-					'actions' => [
-						'get-permissions' => ['get', ],
-						'change-status' => ['post', ],
-						'role-brief-list' => ['get', ],
-						'get-roles' => ['get', ],
-						'change-role-status' => ['post', ],
-						'add-roles' => ['post', ],
-						'save-roles' => ['post', ],
-						'delete-roles' => ['post', ],
-						'get-permission-tree' => ['get', ],
-						'get-role-permissions' => ['get', ],
-						'save-role-permissions' => ['post', ],
-					],
-				],
-			]
-		);
-	}
 
-	public function actions()
-	{
-		return [
-			'role-brief-list' => [
-				'class' => 'api\modules\v1\actions\permission\GeRoleBriefListAction', // 获取角色简要信息列表
-			],
-			'get-permission-tree' => [
-				'class' => 'api\modules\v1\actions\permission\GetPermissionTreeAction', //
-			],
-		];
-	}
+    /**
+     * 权限列表
+     * @return string|\yii\web\Response
+     */
+    public function actionIndex()
+    {
+        if (Yii::$app->request->isAjax){
+            $permission = Permission::find()->where(['type'=>2]);
+            $count = $permission->count();
+            $page = Yii::$app->request->get('page',1);
+            $limit = Yii::$app->request->get('limit',10);
+            $name = Yii::$app->request->get('name');
+            $description = Yii::$app->request->get('description');
+            if ($name){
+                $permission->where(['like','name',$name]);
+            }
+            if ($description){
+                $permission->where(['like','description',$description]);
+            }
+            $data = $permission->offset(($page-1)*$limit)->limit($limit)->orderBy('created_at desc')->asArray()->all();
+            foreach ($data as &$item){
+                $item['updateUrl'] = Url::to(['update','name'=>$item['name']]);
+                $item['destroyUrl'] = Url::to(['destroy','name'=>$item['name']]);
+            }
+            return $this->asJson([
+                'code' => 0,
+                'msg' => '请求成功',
+                'count' => $count,
+                'data' => $data
+            ]);
+        }
+        return $this->render('index');
+    }
 
-	/* *************************   角色管理  *********************××****************************************************/
+    /**
+     * 添加权限
+     */
+    public function actionCreate()
+    {
+        $model = new Permission();
+        if (Yii::$app->request->isPost){
+            if ($model->load(Yii::$app->request->post(),'')&&$model->createPermission()){
+                Yii::$app->session->setFlash('info','添加成功');
+                return $this->redirect(['index']);
+            }
+        }
+        $rules = Yii::$app->authManager->getRules();
+        return $this->render('create',['model'=>$model,'rules'=>$rules]);
+    }
 
-	/**
-	 * @Desc: 获取角色列表
-	 * @return array
-	 */
-	public function actionGetRoles()
-	{
-		$result = PermissionService::instance()->getRoles();
-		return self::ajaxSuccess(self::AJAX_MESSAGE_SUCCESS, $result);
-	}
+    /**
+     * 更新权限
+     * @param string $name
+     * @return string|\yii\web\Response
+     * @throws NotFoundHttpException
+     */
+    public function actionUpdate(string $name)
+    {
 
-	/**
-	 * @Desc: 角色管理 页面
-	 * @return string
-	 */
-	public function actionRoles()
-	{
-		$rolesTree = PermissionService::instance()->getPermissionTree();
-		return $this->render('role', [
-			'roles_tree' => $rolesTree
-		]);
-	}
+        $model = Permission::findOne(['name'=>$name,'type'=>2]);
+        if ($model==null){
+            throw new NotFoundHttpException('权限不存在');
+        }
+        if (Yii::$app->request->isPost){
+            if ($model->load(Yii::$app->request->post(),'')&&$model->updatePermission()){
+                Yii::$app->session->setFlash('info','更新成功');
+                return $this->redirect(['index']);
+            }
+        }
+        $rules = Yii::$app->authManager->getRules();
+        return $this->render('update',['model'=>$model,'rules'=>$rules]);
+    }
 
-	/**
-	 * @Desc: 获取角色所拥有的权限
-	 * @param $role_id
-	 * @return array
-	 */
-	public function actionGetRolePermissions($role_id)
-	{
-		$ret = PermissionService::instance()->getRolePermissions($role_id);
-		return self::ajaxSuccess(self::AJAX_MESSAGE_SUCCESS, $ret);
-	}
-
-	/**
-	 * @Desc: 保存角色权限
-	 * @return array
-	 */
-	public function actionSaveRolePermissions()
-	{
-		$request = Yii::$app->request;
-		$roleId = $request->post('role_id', 0);
-		$permissions = $request->post('permissions', []);
-		PermissionService::instance()->setRolePermissions(['permissions' => $permissions, 'role_id' => $roleId]);
-
-		return self::ajaxSuccess('保存成功');
-	}
-
-	/**
-	 * @Desc: 删除角色
-	 * @return array
-	 */
-	public function actionDeleteRoles()
-	{
-		$roleId = Yii::$app->request->post('role_id', 0);
-		$ret = PermissionService::instance()->deleteRoles($roleId);
-
-		return self::ajaxSuccess('删除成功');
-	}
-
-	/**
-	 * @Desc: 更新角色状态
-	 * @return array
-	 */
-	public function actionChangeRoleStatus()
-	{
-		$roleId = Yii::$app->request->post('role_id', 0);
-		PermissionService::instance()->changeRoleStatus($roleId);
-
-		return self::ajaxSuccess('操作成功');
-	}
-
-	/**
-	 * @Desc: 修改角色
-	 * @return array
-	 */
-	public function actionSaveRoles()
-	{
-		$params = Yii::$app->request->post();
-		PermissionService::instance()->saveRoles($params);
-		return self::ajaxSuccess('保存成功');
-	}
-
-	/**
-	 * @Desc: 添加角色
-	 * @return array
-	 */
-	public function actionAddRoles()
-	{
-		$params = Yii::$app->request->post();
-		PermissionService::instance()->addRoles($params);
-
-		return self::ajaxSuccess('添加成功');
-	}
-
-	/* *************************   权限管理  *********************××****************************************************/
-
-	/**
-	 * @Desc: 权限管理 页面
-	 * @return string
-	 */
-	public function actionPermissions()
-	{
-		$menus = PermissionService::instance()->getMeusBriefList();
-		$menusTree = SettingService::instance()->getMenus();
-		$treeSelect = Helpers::getTreeSelect($menusTree);
-		return $this->render('permission', [
-			'menus' => $menus,
-			'treeSelect' => $treeSelect,
-		]);
-	}
-
-	/**
-	 * @Desc: 获取权限列表
-	 * @return array
-	 */
-	public function actionGetPermissions()
-	{
-		$permissions = PermissionService::instance()->getPermission();
-		return self::ajaxSuccess(self::AJAX_MESSAGE_SUCCESS, $permissions);
-	}
-
-	/**
-	 * @Desc: 删除权限
-	 * @return array
-	 */
-	public function actionDeletePermission()
-	{
-		$id = Yii::$app->request->post('id', 0);
-		$ret = PermissionService::instance()->deletePermission($id);
-
-		return self::ajaxSuccess('删除成功');
-	}
-
-	/**
-	 * @Desc: 更新权限状态
-	 * @return array
-	 */
-	public function actionChangeStatus()
-	{
-		$id = Yii::$app->request->post('id', 0);
-		PermissionService::instance()->changePermissionStatus($id);
-
-		return self::ajaxSuccess('操作成功');
-	}
-
-	/**
-	 * @Desc: 修改权限
-	 * @return array
-	 */
-	public function actionSavePermission()
-	{
-		$params = Yii::$app->request->post();
-		PermissionService::instance()->savePermission($params);
-		return self::ajaxSuccess('保存成功');
-	}
-
-	/**
-	 * @Desc: 添加权限
-	 * @return array
-	 */
-	public function actionAddPermission()
-	{
-		$params = Yii::$app->request->post();
-		PermissionService::instance()->addPermission($params);
-
-		return self::ajaxSuccess('添加成功');
-	}
+    /**
+     * 删除权限
+     * @param string $name
+     * @return \yii\web\Response
+     */
+    public function actionDestroy(string $name)
+    {
+        $auth = Yii::$app->authManager;
+        $permission = $auth->getPermission($name);
+        if ($permission === null){
+            return $this->asJson(['code'=>1,'msg'=>'权限不存在']);
+        }
+        if ($auth->remove($permission)){
+            return $this->asJson(['code'=>0,'msg'=>'删除成功']);
+        }
+        return $this->asJson(['code'=>1,'msg'=>'删除失败']);
+    }
 
 }
