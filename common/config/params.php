@@ -2,21 +2,5 @@
 return [
     'adminEmail' => 'admin@example.com',
     'supportEmail' => 'support@example.com',
-    'senderEmail' => 'noreply@example.com',
-    'senderName' => 'Example.com mailer',
     'user.passwordResetTokenExpire' => 3600,
-    'user.passwordMinLength' => 8,
-    'static_file_t' => 15000000017, // 防止静态资源不刷新，需要时每次加一即可
-	'spider_user_agent' => [
-		'Spider', //
-		'bot', //
-		'Baiduspider', // 百度爬虫
-		'360Spider', // 360爬虫
-		'Googlebot', // google爬虫
-		'msnbot', // 微软MSN爬虫
-		'Sogou web spider', // 搜狗爬虫
-		'sogou spider', // 搜狗爬虫
-		'YodaoBot', // 网易有道爬虫
-		'iaskspider', // 新浪爱问爬虫
-	],
 ];
