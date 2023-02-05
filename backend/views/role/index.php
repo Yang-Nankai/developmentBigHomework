@@ -32,7 +32,7 @@ $js = <<<JS
             ,page:true
             ,cols: [[ 
                 {type: 'checkbox', fixed: 'left'}
-                ,{field: 'id', title: 'ID', width: 80} 
+                ,{field: 'id', title: 'ID', sort: true, width: 80} 
                 ,{field: 'name', title: '角色标识', width: 200}
                 ,{field: 'description', title: '角色名称'} 
                 ,{field: 'rule_name', title: '规则名称'} 

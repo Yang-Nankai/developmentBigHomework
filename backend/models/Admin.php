@@ -14,6 +14,7 @@ use yii\web\IdentityInterface;
  *
  * @property int $id
  * @property string $username
+ * @property string $nickname
  * @property string $auth_key
  * @property string $password_hash
  * @property string $password_reset_token
@@ -21,6 +22,9 @@ use yii\web\IdentityInterface;
  * @property int $status
  * @property int $created_at
  * @property int $updated_at
+ * @property string $avatar
+ * @property string $sex
+ * @property string $signature
  */
 class Admin extends \yii\db\ActiveRecord implements IdentityInterface
 {
@@ -71,13 +75,13 @@ class Admin extends \yii\db\ActiveRecord implements IdentityInterface
     {
         return [
             [['username','email','password_hash','re_password_hash'],'required'],
-            [['username'],'string','min'=>6,'max'=>16],
+            [['username','nickname'],'string','min'=>6,'max'=>16],
+            [['avatar','signature'],'string','max'=>200],
             ['username','unique'],
             ['email','unique','message'=>'邮箱已存在'],
             ['email','email'],
             [['password_hash','re_password_hash'],'string','min'=>6,'max'=>16],
             ['re_password_hash','compare','compareAttribute'=>'password_hash'],
-
         ];
     }
 
@@ -85,9 +89,13 @@ class Admin extends \yii\db\ActiveRecord implements IdentityInterface
     {
         return [
             'username' => '用户名',
+            'nickname' => '昵称',
             'password_hash' => '密码',
             'email' => '邮箱',
-            're_password_hash' => '确认密码'
+            're_password_hash' => '确认密码',
+            'sex' => '性别',
+            'signature' => '个性签名',
+            'avatar' => '头像',
         ];
     }
 

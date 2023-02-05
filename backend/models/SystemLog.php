@@ -14,8 +14,7 @@ use yii\web\IdentityInterface;
  *
  * @property integer $id
  * @property integer $user_id
- * @property integer $nickname
- * @property string $title
+ * @property integer $username
  * @property string $ip
  * @property string $request_method
  * @property string $params
@@ -40,8 +39,8 @@ class SystemLog extends \yii\db\ActiveRecord
     {
         return [
             [['user_id', 'created_at'], 'integer'],
-            [['username', 'params', 'title', 'request_method', 'route'], 'string'],
-            [['title', 'url'], 'string', 'max' => 200],
+            [['username', 'params', 'request_method', 'route'], 'string'],
+            [['url'], 'string', 'max' => 200],
             [['ip'], 'string', 'max' => 15],
         ];
     }
@@ -57,7 +56,6 @@ class SystemLog extends \yii\db\ActiveRecord
             'username' => '用户名',
             'params' => '参数',
             'request_method' => '请求方法',
-            'title' => '标题',
             'ip' => 'IP地址',
             'route' => '路由',
             'url' => 'URL地址',

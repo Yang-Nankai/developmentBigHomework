@@ -43,7 +43,7 @@ $js = <<<JS
             ,page:true
             ,cols: [[ 
                 {type: 'checkbox', fixed: 'left'}
-                ,{field: 'id', title: 'ID', width: 80} 
+                ,{field: 'id', title: 'ID', sort: true, width: 80} 
                 ,{field: 'username', title: '用户名', width: 100}
                 ,{field: 'email', title: '邮箱'} 
                 ,{field: 'roles', title: '角色',toolbar:'#roles'} 

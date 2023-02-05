@@ -73,9 +73,6 @@ use yii\helpers\Url;
                         <cite><?php echo Yii::$app->user->identity->username; ?></cite>
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a lay-href="set/user/info.html">基本资料</a></dd>
-                        <dd><a lay-href="set/user/password.html">修改密码</a></dd>
-                        <hr>
                         <dd style="text-align: center;">
                             <a href="<?php echo \yii\helpers\Url::to(['public/logout'])?>">退出</a>
                         </dd>
@@ -94,8 +91,8 @@ use yii\helpers\Url;
         <!-- 侧边菜单 -->
         <div class="layui-side layui-side-menu">
             <div class="layui-side-scroll">
-                <div class="layui-logo" lay-href="home/console.html">
-                    <span>layuiAdmin</span>
+                <div class="layui-logo" lay-href="#">
+                    <span>layuiYM</span>
                 </div>
 
                 <ul class="layui-nav layui-nav-tree" lay-shrink="all" id="LAY-system-side-menu" lay-filter="layadmin-system-side-menu">
@@ -106,19 +103,13 @@ use yii\helpers\Url;
                         </a>
                         <dl class="layui-nav-child">
                             <dd data-name="console" class="layui-this">
-                                <a lay-href="<?php echo \yii\helpers\Url::to(['public/index1']); ?>">控制台</a>
-                            </dd>
-                            <dd data-name="console">
-                                <a lay-href="<?php echo \yii\helpers\Url::to(['public/index2']); ?>">主页一</a>
-                            </dd>
-                            <dd data-name="console">
-                                <a lay-href="<?php echo \yii\helpers\Url::to(['public/index3']); ?>">主页二</a>
+                                <a lay-href="<?php echo \yii\helpers\Url::to(['public/console']); ?>">控制台</a>
                             </dd>
                         </dl>
                     </li>
-                    <li data-name="home" class="layui-nav-item">
+                    <li data-name="system" class="layui-nav-item">
                         <a href="javascript:;" lay-tips="系统管理" lay-direction="2">
-                            <i class="layui-icon layui-icon-home"></i>
+                            <i class="layui-icon layui-icon-set-fill"></i>
                             <cite>系统管理</cite>
                         </a>
                         <dl class="layui-nav-child">
@@ -136,9 +127,9 @@ use yii\helpers\Url;
                             </dd>
                         </dl>
                     </li>
-                    <li data-name="home" class="layui-nav-item">
+                    <li data-name="article" class="layui-nav-item">
                         <a href="javascript:;" lay-tips="文章管理" lay-direction="2">
-                            <i class="layui-icon layui-icon-home"></i>
+                            <i class="layui-icon layui-icon-read"></i>
                             <cite>文章管理</cite>
                         </a>
                         <dl class="layui-nav-child">
@@ -153,9 +144,9 @@ use yii\helpers\Url;
                             </dd>
                         </dl>
                     </li>
-                    <li data-name="home" class="layui-nav-item">
+                    <li data-name="front" class="layui-nav-item">
                         <a href="javascript:;" lay-tips="前端管理" lay-direction="2">
-                            <i class="layui-icon layui-icon-home"></i>
+                            <i class="layui-icon layui-icon-layouts"></i>
                             <cite>前端管理</cite>
                         </a>
                         <dl class="layui-nav-child">
@@ -167,14 +158,25 @@ use yii\helpers\Url;
                             </dd>
                         </dl>
                     </li>
-                    <li data-name="home" class="layui-nav-item">
+                    <li data-name="system-log" class="layui-nav-item">
                         <a href="javascript:;" lay-tips="系统日志" lay-direction="2">
-                            <i class="layui-icon layui-icon-home"></i>
+                            <i class="layui-icon layui-icon-tabs"></i>
                             <cite>系统日志</cite>
                         </a>
                         <dl class="layui-nav-child">
                             <dd data-name="console">
                                 <a lay-href="<?php echo \yii\helpers\Url::to(['system-log/index']); ?>">系统日志</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li data-name="gii" class="layui-nav-item">
+                        <a href="javascript:;" lay-tips="代码生成" lay-direction="2">
+                            <i class="layui-icon layui-icon-template-1"></i>
+                            <cite>代码生成</cite>
+                        </a>
+                        <dl class="layui-nav-child">
+                            <dd data-name="console">
+                                <a lay-href="<?php echo \yii\helpers\Url::to(['/gii']); ?>">代码生成</a>
                             </dd>
                         </dl>
                     </li>
@@ -200,7 +202,7 @@ use yii\helpers\Url;
             </div>
             <div class="layui-tab" lay-unauto lay-allowClose="true" lay-filter="layadmin-layout-tabs">
                 <ul class="layui-tab-title" id="LAY_app_tabsheader">
-                    <li lay-id="<?php echo \yii\helpers\Url::to(['public/index1']); ?>" lay-attr="#" class="layui-this"><i class="layui-icon layui-icon-home"></i></li>
+                    <li lay-id="<?php echo \yii\helpers\Url::to(['public/console']); ?>" lay-attr="#" class="layui-this"><i class="layui-icon layui-icon-home"></i></li>
                 </ul>
             </div>
         </div>
@@ -209,7 +211,7 @@ use yii\helpers\Url;
         <!-- 主体内容 -->
         <div class="layui-body" id="LAY_app_body">
             <div class="layadmin-tabsbody-item layui-show">
-                <iframe src="<?php echo \yii\helpers\Url::to(['public/index1']); ?>" frameborder="0" class="layadmin-iframe"></iframe>
+                <iframe src="<?php echo \yii\helpers\Url::to(['public/console']); ?>" frameborder="0" class="layadmin-iframe"></iframe>
             </div>
         </div>
 
