@@ -36,11 +36,11 @@ $js = <<<JS
             ,page:true
             ,cols: [[ 
                 {type: 'checkbox', fixed: 'left'}
-                ,{field: 'cid', title: 'ID', width: 80} 
+                ,{field: 'cid', title: 'ID', sort: true, width: 80} 
                 ,{field: 'username', title: '用户名', width: 100}
                 ,{field: 'email', title: '邮箱'} 
-                ,{field: 'status', title: '状态'}
-                ,{field: 'created_at', title: '创建时间', templet:function(data){
+                ,{field: 'status', sort: true, title: '状态'}
+                ,{field: 'created_at', sort: true, title: '创建时间', templet:function(data){
                         return layui.util.toDateString(data.create_time*1000, "yyyy-MM-dd HH:mm:ss");
                     }
                 }

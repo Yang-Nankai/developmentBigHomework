@@ -6,9 +6,11 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\helpers\Url;
 use yii\web\NotFoundHttpException;
+use yii\helpers\VarDumper;
 
 class AdminController extends BaseController
 {
+
     /**
      * 用户列表
      * @return string|\yii\web\Response
@@ -33,6 +35,7 @@ class AdminController extends BaseController
                 $item['updateUrl'] = Url::to(['update','id'=>$item['id']]);
                 $item['destroyUrl'] = Url::to(['destroy','id'=>$item['id']]);
                 $item['assignUrl'] = Url::to(['assign','id'=>$item['id']]);
+                $item['infoUrl'] = Url::to(['info','id'=>$item['id']]);
                 $item['roles'] = Yii::$app->authManager->getRolesByUser($item['id']);
             }
             return $this->asJson([
@@ -80,6 +83,31 @@ class AdminController extends BaseController
             }
         }
         return $this->render('update',['model'=>$model]);
+    }
+
+    /**
+     * 个人资料
+     * @param int $id
+     * return string|\yii\web\Response
+     * @throws NotFoundHttpException
+     */
+    public function actionInfo(){
+        //获取当前的id
+        $id = Yii::$app->user->id;
+        $model = Admin::findOne($id);
+        if($model === null){
+            throw new NotFoundHttpException('用户不存在');
+        }
+        if(Yii::$app->request->isPost){
+            if($model->load(Yii::$app->request->post(),'')&&$model->save()){
+                Yii::$app->session->setFlash('info','更新成功');
+                return $this->redirect(['info']);
+            }else {
+                Yii::$app->session->setFlash('info','更新失败');
+                return $this->redirect(['info']);
+            }
+        }
+        return $this->render('info', ['model'=>$model]);
     }
 
     /**

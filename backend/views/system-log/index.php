@@ -35,18 +35,17 @@ $js = <<<JS
             ,page:true
             ,cols: [[ 
                 {type: 'checkbox', fixed: 'left'}
-                ,{field: 'id', title: 'ID', width: 80} 
+                ,{field: 'id', title: 'ID', sort: true, width: 80} 
                 ,{field: 'username', title: '用户名', width: 100}
-                ,{field: 'user_id', title: '用户序号'}
-                ,{field: 'title', title: '网页标题'} 
+                ,{field: 'user_id', sort: true, title: '用户序号'}
                 ,{field: 'ip', title: 'IP地址'}
                 ,{field: 'route', title: '路由地址'}
                 ,{field: 'url', title: 'URL地址'}
                 ,{field: 'params', title: '参数'}
                 ,{field: 'request_method', title: '请求方法'}
-                ,{field: 'created_at', title: '创建时间', templet:function(data){
+                ,{field: 'created_at', sort: true, title: '创建时间', templet:function(data){
                         return layui.util.toDateString(data.create_time*1000, "yyyy-MM-dd HH:mm:ss");
-                    }
+                    }, width: 200
                 }
                 ,{fixed: 'right', title:'操作',toolbar: '#toolbar', width:220}
             ]]

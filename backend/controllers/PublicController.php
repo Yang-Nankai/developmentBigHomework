@@ -13,19 +13,9 @@ class PublicController extends BaseController
         return $this->render('iframe');
     }
 
-    public function actionIndex1()
+    public function actionConsole()
     {
-        return $this->render('index1');
-    }
-
-    public function actionIndex2()
-    {
-        return $this->render('index2');
-    }
-
-    public function actionIndex3()
-    {
-        return $this->render('index3');
+        return $this->render('console');
     }
 
     /**
