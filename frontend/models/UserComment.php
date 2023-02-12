@@ -21,7 +21,7 @@ class UserComment extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'ym_user_comment';
+        return '{{%ym_user_comment}}';
     }
 
     /**

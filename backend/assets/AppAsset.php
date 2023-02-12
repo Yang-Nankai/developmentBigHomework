@@ -12,12 +12,13 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+        'static/layuiadmin/layui/css/layui.css',
+        'static/layuiadmin/style/admin.css',
     ];
     public $js = [
+        'static/layuiadmin/layui/layui.js'
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap5\BootstrapAsset',
+
     ];
 }
