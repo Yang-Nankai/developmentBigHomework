@@ -1,19 +1,23 @@
 <?php
 
-namespace backend\controllers;
+/**
+ * Desc: Manager article show, delete, add
+ * Created by Xiaoduo.
+ */
 
+namespace backend\controllers;
+use Yii;
 use common\models\YmArticle;
 use common\models\YmArticleSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\helpers\Url;
-use Yii;
 
 /**
  * YmArticleController implements the CRUD actions for YmArticle model.
  */
-class YmArticleController extends Controller
+class YmArticleController extends BaseController
 {
     /**
      * @inheritDoc
@@ -38,29 +42,32 @@ class YmArticleController extends Controller
      *
      * @return string
      */
-    // public function actionIndex()
-    // {
-    //     $searchModel = new YmArticleSearch();
-    //     $dataProvider = $searchModel->search($this->request->queryParams);
-
-    //     return $this->render('index', [
-    //         'searchModel' => $searchModel,
-    //         'dataProvider' => $dataProvider,
-    //     ]);
-    // }
-
     public function actionIndex()
     {
+        $searchModel = new YmArticleSearch();
+
         if (Yii::$app->request->isAjax){
-            $ymArticle = (new YmArticleSearch())->find();
-            $count = $ymArticle->count();
+            Yii::info("这里进行了一次js搜索"); 
+            $article = (new YmArticle())->find();
+            $count = $article->count();
             $page = Yii::$app->request->get('page',1);
             $limit = Yii::$app->request->get('limit',10);
-            $data = $ymArticle->offset(($page-1)*$limit)->limit($limit)->asArray()->all();
+            $author = Yii::$app->request->get('author');
+            $title = Yii::$app->request->get('title');
+            $data = $article->offset(($page-1)*$limit)->limit($limit)->asArray()->all();
+            if ($author){
+                $article->where(['like','author',$author]);
+            }
+            if ($title){
+                $article->where(['like','title',$title]);
+            }
+            $data = $article->offset(($page-1)*$limit)->limit($limit)->asArray()->all();
+            // 添加操作
             foreach ($data as &$item){
-                $item['updateUrl'] = Url::to(['update','id'=>$item['id']]);
+                $item['viewUrl'] = Url::to(['view','id'=>$item['id']]);//查看按钮
+                $item['updateUrl'] = Url::to(['update','id'=>$item['id']]);//更新按钮
                 $item['destroyUrl'] = Url::to(['destroy','id'=>$item['id']]);
-                $item['roles'] = Yii::$app->authManager->getRolesByUser($item['cid']);
+                // $item['roles'] = Yii::$app->authManager->getRolesByUser($item['id']);
             }
             return $this->asJson([
                 'code' => 0,
@@ -69,7 +76,30 @@ class YmArticleController extends Controller
                 'data' => $data
             ]);
         }
-        return $this->render('index');
+        else{
+            $dataProvider = $searchModel->search($this->request->queryParams);
+            // $article = (new YmArticle())->find();
+            // $author = Yii::$app->request->get('author');
+            // $title = Yii::$app->request->get('title');
+            // if ($author){
+            //     $article->where(['like','author',$author]);
+            // }
+            // if ($title){
+            //     $title->where(['like','title',$title]);
+            // }
+            // $data = $article->asArray()->all();
+            // return $this->asJson([
+            //     'code' => 0,
+            //     'msg' => '请求成功',
+            //     'data' => $data
+            // ]);
+        }
+        
+
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
     /**

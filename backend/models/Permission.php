@@ -15,7 +15,7 @@ class Permission extends ActiveRecord
     {
         return [
             ['name','required'],
-            ['name','string','max'=>20],
+            ['name','string','max'=>100],
             ['name','unique'],
 
             ['description','required'],

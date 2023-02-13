@@ -2,7 +2,7 @@
 <div class="layui-form-item">
     <label for="" class="layui-form-label">标识</label>
     <div class="layui-input-inline">
-        <input type="text" value="<?php echo $model->getAttribute('name'); ?>" name="name" placeholder="请输入标识,如admin/create" class="layui-input" maxlength="20" >
+        <input type="text" value="<?php echo $model->getAttribute('name'); ?>" name="name" placeholder="请输入标识,如admin/create" class="layui-input" maxlength="100" >
     </div>
     <?php if ($model->hasErrors('name')): ?>
         <div class="layui-form-mid layui-word-aux"><?php echo $model->getFirstError('name'); ?></div>

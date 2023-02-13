@@ -89,16 +89,20 @@ class BaseController extends Controller
 		if (isset($params['POST']['password']) && !empty($params['POST']['password'])) {
 			$params['POST']['password'] = '**********';
 		}
-		$data = array_merge([
-			'user_id' => (int) Yii::$app->user->id,
-			'username' => (string) Yii::$app->user->identity->username,
-			'route' => $route,
-			'url' => $request->getUrl(),
-			'params' => json_encode($params),
-			'ip' => $request->getUserIP(),
-			'request_method' => $_SERVER['REQUEST_METHOD'],
-		], $data);
-
+        // var_dump(Yii::$app->user->identity->username);
+        // varDumper::dump(Yii::$app->user->identity);
+        if(Yii::$app->user->identity){
+            $data = array_merge([
+                'user_id' => (int) Yii::$app->user->id,
+                // 'username' => (string) Yii::$app->user->identity->username,
+                'route' => $route,
+                'url' => $request->getUrl(),
+                'params' => json_encode($params),
+                'ip' => $request->getUserIP(),
+                'request_method' => $_SERVER['REQUEST_METHOD'],
+            ], $data);
+        }
+		
 		$log = new SystemLog();
 		$log->load($data, '');
 
