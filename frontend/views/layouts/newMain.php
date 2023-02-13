@@ -109,7 +109,6 @@ AppAsset::register($this);
                                     <?php echo Html::a('Home',['/site/index']); ?>
                                 </li>
                                 <li> <?php echo Html::a('About Us',['/site/about']); ?> </li>
-                                <li> <?php echo Html::a('Blog',['/site/blog']); ?> </li>
                                 <li class="menu-item-has-children"><a href="#">Homework</a>
                                     <ul class="sub-menu">
                                         <li> <?php echo Html::a('Personal',['/site/personal']); ?> </li>
@@ -164,7 +163,6 @@ AppAsset::register($this);
                                 <ul class="d-flex">
                                     <li><a class="active" href="index.php">Home</a></li>
                                     <li><?php echo Html::a('About',['/site/about']); ?></li>
-                                    <li><?php echo Html::a('Blog',['/site/blog']); ?></li>
                                     <li><a href="#">HOMEWORK</a>
                                         <ul class="bucker-dropdown">
                                             <li><?php echo Html::a('PERSONAL',['/site/personal']); ?></li>
