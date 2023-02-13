@@ -134,13 +134,13 @@ use yii\helpers\Url;
                         </a>
                         <dl class="layui-nav-child">
                             <dd data-name="console">
-                                <a lay-href="<?php echo \yii\helpers\Url::to(['article/index']); ?>">文章管理</a>
+                                <a lay-href="<?php echo \yii\helpers\Url::to(['ym-article/index']); ?>">文章管理</a>
                             </dd>
                             <dd data-name="console">
-                                <a lay-href="<?php echo \yii\helpers\Url::to(['article/category']); ?>">分类管理</a>
+                                <a lay-href="<?php echo \yii\helpers\Url::to(['ym-article-category/index']); ?>">分类管理</a>
                             </dd>
                             <dd data-name="console">
-                                <a lay-href="<?php echo \yii\helpers\Url::to(['article/comment']); ?>">文章评论</a>
+                                <a lay-href="<?php echo \yii\helpers\Url::to(['ym-article-comment/index']); ?>">文章评论</a>
                             </dd>
                         </dl>
                     </li>
