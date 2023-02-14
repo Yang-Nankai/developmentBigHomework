@@ -40,7 +40,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="layui-card-body">
         <table id="dataTable" lay-filter="dataTable"></table>
         <script type="text/html" id="toolbar">
-			<a class="layui-btn layui-btn-sm" href="{{d.viewUrl}}" >查看</a>
             <a class="layui-btn layui-btn-sm" href="{{d.updateUrl}}" >编辑</a>
 			<a class="layui-btn layui-btn-danger layui-btn-sm" lay-event="destroy">删除</a>
         </script>
@@ -61,18 +60,9 @@ $js = <<<JS
             , cols: [[
 					{type:'checkbox'}
 					, {field: 'id', title: 'ID', width: 50, align: 'center'}
-					, {field: 'title', title: '标题', width: 310, align: 'center', templet: function (d) {
-						var img = '';
-						if (d.title_image) {
-							img += '<img onclick="showTitleImage(\''+d.title_image+'\')" class="title-image" data-src="'+ d.title_image +'" src="<?=Yii::getAlias("@static_backend")?>/images/img-icon-16.png"> ';
-						}
-						return img + '<span style=\''+ d.title_style +'\'>'+ d.title +'</span>';
-					}}
-					// , {field: 'category_name', title: '分类', width: 100, align: 'center'}
-					// , {field: 'nickname', title: '发布人', width: 80, align: 'center'}
+					, {field: 'title', title: '标题', width: 310, align: 'center'}
 					, {field: 'author', title: '作者', width: 80, align: 'center'}
 					, {field: 'hits', title: '查看次数', width: 80, align: 'center'}
-					// , {field: 'sort_value', title: '排序', width: 60, align: 'center'}
 					, {field: 'source', title: '来源', width: 60, align: 'center'}
 					, {field: 'is_show', title: '是否展示', width: 100, templet: function (d) {
 						var checked = d.is_show == 1 ? 'checked' : '';

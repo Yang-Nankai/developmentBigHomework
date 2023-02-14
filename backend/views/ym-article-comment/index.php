@@ -16,7 +16,6 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="layui-card">
     <div class="layui-card-header layuiadmin-card-header-auto">
         <div class="layui-btn-group">
-            <a href="<?php echo \yii\helpers\Url::to(['create']) ?>" class="layui-btn layui-btn-sm">添加</a>
             <a id="searchBtn" class="layui-btn layui-btn-sm">搜索</a>
         </div>
         <div class="layui-form">
@@ -55,18 +54,10 @@ $js = <<<JS
                 ,{field: 'id', title: '序号', sort: true, width: 80} 
                 ,{field: 'article_id', title: '文章ID', width: 80}
                 ,{field: 'nickname', title: '用户名'} 
-                ,{field: 'reply_comment_ids', title: '评论ID'}
-                ,{field: 'reply_comment_id', title: '状态'}
-                ,{field: 'avatar', title: '状态'}
                 ,{field: 'ip', title: '评论IP'}
                 ,{field: 'content', title: '评论内容'}
                 ,{field: 'is_delete', title: '状态'}
-                ,{field: 'is_read', title: '状态'}
                 ,{field: 'created_at', sort: true, title: '创建时间', templet:function(data){
-                        return layui.util.toDateString(data.create_time*1000, "yyyy-MM-dd HH:mm:ss");
-                    }
-                }
-                ,{field: 'updated_at', sort: true, title: '最后更新', templet:function(data){
                         return layui.util.toDateString(data.create_time*1000, "yyyy-MM-dd HH:mm:ss");
                     }
                 }

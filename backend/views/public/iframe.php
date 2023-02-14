@@ -137,9 +137,6 @@ use yii\helpers\Url;
                                 <a lay-href="<?php echo \yii\helpers\Url::to(['ym-article/index']); ?>">文章管理</a>
                             </dd>
                             <dd data-name="console">
-                                <a lay-href="<?php echo \yii\helpers\Url::to(['ym-article-category/index']); ?>">分类管理</a>
-                            </dd>
-                            <dd data-name="console">
                                 <a lay-href="<?php echo \yii\helpers\Url::to(['ym-article-comment/index']); ?>">文章评论</a>
                             </dd>
                         </dl>

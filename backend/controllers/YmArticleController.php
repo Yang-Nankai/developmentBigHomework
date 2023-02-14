@@ -12,7 +12,10 @@ use common\models\YmArticleSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\UploadForm;
+use yii\web\UploadedFile;
 use yii\helpers\Url;
+use yii\helpers\VarDumper;
 
 /**
  * YmArticleController implements the CRUD actions for YmArticle model.
@@ -64,10 +67,8 @@ class YmArticleController extends BaseController
             $data = $article->offset(($page-1)*$limit)->limit($limit)->asArray()->all();
             // 添加操作
             foreach ($data as &$item){
-                $item['viewUrl'] = Url::to(['view','id'=>$item['id']]);//查看按钮
                 $item['updateUrl'] = Url::to(['update','id'=>$item['id']]);//更新按钮
                 $item['destroyUrl'] = Url::to(['destroy','id'=>$item['id']]);
-                // $item['roles'] = Yii::$app->authManager->getRolesByUser($item['id']);
             }
             return $this->asJson([
                 'code' => 0,
@@ -76,43 +77,7 @@ class YmArticleController extends BaseController
                 'data' => $data
             ]);
         }
-        else{
-            $dataProvider = $searchModel->search($this->request->queryParams);
-            // $article = (new YmArticle())->find();
-            // $author = Yii::$app->request->get('author');
-            // $title = Yii::$app->request->get('title');
-            // if ($author){
-            //     $article->where(['like','author',$author]);
-            // }
-            // if ($title){
-            //     $title->where(['like','title',$title]);
-            // }
-            // $data = $article->asArray()->all();
-            // return $this->asJson([
-            //     'code' => 0,
-            //     'msg' => '请求成功',
-            //     'data' => $data
-            // ]);
-        }
-        
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
-    }
-
-    /**
-     * Displays a single YmArticle model.
-     * @param int $id ID
-     * @return string
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    public function actionView($id)
-    {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+        return $this->render('index');
     }
 
     /**
@@ -122,16 +87,17 @@ class YmArticleController extends BaseController
      */
     public function actionCreate()
     {
+
         $model = new YmArticle();
 
         if ($this->request->isPost) {
-            if ($model->load($this->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'id' => $model->id]);
+            if ($model->load($this->request->post(),'') && $model->save()) {
+                // $model->set_title_image('uploads/' . $image->imageFile->baseName . '.' . $image->imageFile->extension);
+                return $this->redirect(['index']);
             }
         } else {
             $model->loadDefaultValues();
         }
-
         return $this->render('create', [
             'model' => $model,
         ]);
@@ -148,8 +114,15 @@ class YmArticleController extends BaseController
     {
         $model = $this->findModel($id);
 
-        if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model === null){
+            throw new NotFoundHttpException('数据不存在');
+        }
+
+        if (Yii::$app->request->isPost){
+            if ($model->load(Yii::$app->request->post(),'')&&$model->save()){
+                Yii::$app->session->setFlash('info','更新成功');
+                return $this->redirect(['index']);
+            }
         }
 
         return $this->render('update', [
@@ -164,11 +137,16 @@ class YmArticleController extends BaseController
      * @return \yii\web\Response
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionDelete($id)
+    public function actionDestroy(int $id)
     {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
+        $model = YmArticle::findOne($id);
+        if ($model === null){
+            return $this->asJson(['code'=>1,'msg'=>'文章不存在']);
+        }
+        if ($model->delete()){
+            return $this->asJson(['code'=>0,'msg'=>'删除成功']);
+        }
+        return $this->asJson(['code'=>1,'msg'=>'删除失败']);
     }
 
     /**

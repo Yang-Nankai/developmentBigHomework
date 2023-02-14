@@ -30,9 +30,9 @@ $js = <<<JS
         var layer = layui.layer;
         var dataTable = table.render({
             elem: '#dataTable' 
-            ,url: '{$url}'
+            ,url: '{$url}' 
             ,height: 480 
-            ,page:true
+            ,page:true 
             ,cols: [[ 
                 {type: 'checkbox', fixed: 'left'}
                 ,{field: 'id', title: 'ID', sort: true, width: 80} 

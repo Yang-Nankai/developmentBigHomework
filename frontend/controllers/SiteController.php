@@ -5,12 +5,12 @@ namespace frontend\controllers;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
+use yii\helpers\Url;
 use yii\base\InvalidArgumentException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-// use common\models\LoginForm;
 use frontend\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
@@ -20,6 +20,7 @@ use frontend\models\CommentForm;
 use frontend\models\UserComment;
 //test
 use app\models\EntryForm;
+use common\models\YmArticle;
 use yii\data\Pagination;
 use yii\helpers\VarDumper;
 
@@ -85,7 +86,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $models = YmArticle::find()->where(['is_show' =>1 ])->all();
+        return $this->render('index', [
+            'models' => $models,
+        ]);
     }
 
     /**
@@ -203,11 +207,6 @@ class SiteController extends Controller
         return $this->render('team');
     }
 
-    public function actionBlogDetail()
-    {
-        return $this->render('blog-detail');
-    }
-
     /**
      * Displays comment page.
      *
@@ -229,7 +228,6 @@ class SiteController extends Controller
         } else {
             $comments = UserComment::find()->where(['status' =>1 ]);
             $countComments = clone $comments;
-            // VarDumper::dump($countComments->count());
             $pages = new Pagination([
                 'totalCount' => $comments->count(),
                 'pageSize' => 10,
@@ -242,7 +240,6 @@ class SiteController extends Controller
             //获取数据
             $models = $comments->offset($pages->offset)->limit($pages->limit)->all();
 
-            // VarDumper::dump($comments);
             return $this->render('comment', [
                 'models' => $models,
                 'pages' => $pages,

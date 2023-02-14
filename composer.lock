@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7487b425c0ca90189a4b44aa6838cd89",
+    "content-hash": "937f7233ab3a4a6cc9b16dddcf6c6677",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -1449,6 +1449,48 @@
                 }
             ],
             "time": "2022-05-30T19:17:29+00:00"
+        },
+        {
+            "name": "ttiantianle/upload",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ttiantianle/upload-img.git",
+                "reference": "2af1b9b746aca49ce338ee57b2c53d3593c7c97a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ttiantianle/upload-img/zipball/2af1b9b746aca49ce338ee57b2c53d3593c7c97a",
+                "reference": "2af1b9b746aca49ce338ee57b2c53d3593c7c97a",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ttiantianle\\upload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ttiantianle",
+                    "email": "ttiantianle@163.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/ttiantianle/upload-img/issues",
+                "source": "https://github.com/ttiantianle/upload-img/tree/v1.2.0"
+            },
+            "time": "2020-06-05T08:07:29+00:00"
         },
         {
             "name": "yiisoft/yii2",

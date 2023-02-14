@@ -1,3 +1,10 @@
+<?php
+use backend\models\User;
+use backend\models\Admin;
+use common\models\YmArticle;
+use backend\models\UserComment;
+?>
+
 <div class="layui-col-md8">
     <div class="layui-row layui-col-space15">
 
@@ -43,7 +50,7 @@
 
                                 <li class="layui-col-xs3">
 
-                                    <a lay-href="<?php echo \yii\helpers\Url::to(['article/index']); ?>">
+                                    <a lay-href="<?php echo \yii\helpers\Url::to(['ym-article/index']); ?>">
 
                                         <i class="layui-icon layui-icon-read"></i>
 
@@ -99,7 +106,13 @@
 
                                         <h3>前台用户数量</h3>
 
-                                        <p><cite>66</cite></p>
+                                        <p><cite>
+                                            <?php 
+                                                $frontUser = new User();
+                                                $sum = $frontUser->find()->count();
+                                                echo $sum;
+                                            ?>
+                                        </cite></p>
 
                                     </a>
 
@@ -111,7 +124,13 @@
 
                                         <h3>后台用户数量</h3>
 
-                                        <p><cite>12</cite></p>
+                                        <p><cite>
+                                            <?php 
+                                                $backUser = new Admin();
+                                                $sum = $backUser->find()->count();
+                                                echo $sum;
+                                            ?>
+                                        </cite></p>
 
                                     </a>
 
@@ -123,7 +142,13 @@
 
                                         <h3>文章数量</h3>
 
-                                        <p><cite>99</cite></p>
+                                        <p><cite>
+                                            <?php 
+                                                $article = new YmArticle();
+                                                $sum = $article->find()->count();
+                                                echo $sum;
+                                            ?>
+                                        </cite></p>
 
                                     </a>
 
@@ -135,7 +160,13 @@
 
                                         <h3>留言数量</h3>
 
-                                        <p><cite>20</cite></p>
+                                        <p><cite>
+                                            <?php 
+                                                $comment = new UserComment();
+                                                $sum = $comment->find()->count();
+                                                echo $sum;
+                                            ?>
+                                        </cite></p>
 
                                     </a>
 

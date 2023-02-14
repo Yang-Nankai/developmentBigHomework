@@ -122,13 +122,18 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="col-lg-6 col-md-6">
                         <div class="about_desc wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
                             <h2>Yang Xin</h2>
-                            <p>杨鑫分工</p><br/>
+                            <p>参与前期讨论、参与数据库设计、完成前后台模板的收集、完成前端主页部分数据的展示、
+                                完成主页除文章页面的其他页面开发与调试、完成后台除文章管理页面的其他页面的开发与调
+                                试。
+                            </p><br/>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="about_desc wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
                             <h2>Meng Xiaoduo</h2>
-                            <p>孟笑朵分工</p>
+                            <p>参与前期讨论、参与数据库设计、完成前后台模板的收集、完成前端主页部分数据的展
+                                示、完成主页文章页面的开发与调试、完成后台文章管理页面的开发与调试。
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -14,6 +14,7 @@ use Yii;
  * @property string $title_style 标题样式，简单样式
  * @property string $title_image 标题图片
  * @property string $author 作者
+ * @property string $content 文章内容
  * @property string $description 描述
  * @property int $hits 点击数
  * @property int $comment_count 评论数
@@ -32,6 +33,7 @@ use Yii;
  */
 class YmArticle extends \yii\db\ActiveRecord
 {
+
     /**
      * {@inheritdoc}
      */
@@ -49,10 +51,11 @@ class YmArticle extends \yii\db\ActiveRecord
             [['user_id', 'category_id', 'hits', 'comment_count', 'is_allow_comment', 'top', 'is_show', 'bad', 'is_delete', 'is_hot', 'sort_value', 'created_at', 'updated_at'], 'integer'],
             [['from_platform'], 'string'],
             [['title'], 'string', 'max' => 50],
-            [['title_style', 'title_image', 'description'], 'string', 'max' => 200],
+            [['title_style', 'title_image', 'description'], 'string', 'max' => 1000],
             [['author'], 'string', 'max' => 20],
             [['keyword'], 'string', 'max' => 100],
             [['source'], 'string', 'max' => 30],
+            [['content'], 'string', 'max' => 2000],
         ];
     }
 
@@ -84,6 +87,7 @@ class YmArticle extends \yii\db\ActiveRecord
             'from_platform' => '发布平台来源',
             'created_at' => '发布时间',
             'updated_at' => '更新时间',
+            'content' => '文章内容'
         ];
     }
 
@@ -95,4 +99,5 @@ class YmArticle extends \yii\db\ActiveRecord
     {
         return new YmArticleQuery(get_called_class());
     }
+
 }
