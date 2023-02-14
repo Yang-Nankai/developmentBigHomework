@@ -20,8 +20,8 @@ return [
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
-            'identityClass' => 'backend\models\Admin',
-            'enableAutoLogin' => true,
+            'identityClass' => backend\models\Admin::className(),
+            'enableAutoLogin' => false,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
             'loginUrl' => ['public/login'],
         ],

@@ -62,12 +62,10 @@ $this->params['breadcrumbs'][] = $this->title;
                         </tr>
                         <tr>
                             <th>百度网盘</th>
-                            <td>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li
-                                sam vocabular. Lingues differe
-                                solmen in grammatica, pronunciation commun vocabules.</td>
-                            <td>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li
-                                sam vocabular. Lingues differe
-                                solmen in grammatica, pronunciation commun vocabules.</td>
+                            <td><p>链接：https://pan.baidu.com/s/1Wai2ZMCRx_AcRvQzZXscQQ </p>
+                                    提取码：1234</td>
+                            <td><p>链接：https://pan.baidu.com/s/1Wai2ZMCRx_AcRvQzZXscQQ </p>
+                                    提取码：1234</td>
                         </tr>
                         <tr>
                             <th>GitHub地址</th>
@@ -84,14 +82,14 @@ $this->params['breadcrumbs'][] = $this->title;
                             <th class="compare-column-titles">直接下载</th>
                             <td class="compare-column-productinfo">
                                 <div class="compare-pdoduct-image">
-                                    <a href="data/personal/作业(1910874_赵一林).zip" class="btn custom-btn md-size rounded-0" download="个人作业(2011028_杨鑫)">
+                                    <a href="data/personal/作业(2011028_杨鑫).zip" class="btn custom-btn md-size rounded-0" download="个人作业(2011028_杨鑫).zip">
                                         <span>Download</span>
                                     </a>
                                 </div>
                             </td>
                             <td class="compare-column-productinfo">
                                 <div class="compare-pdoduct-image">
-                                    <a href="index.php" class="btn custom-btn md-size rounded-0" download="个人作业(2010349_孟笑朵)">
+                                    <a href="data/personal/作业(2010349_孟笑朵).zip" class="btn custom-btn md-size rounded-0" download="个人作业(2010349_孟笑朵).zip">
                                         <span>Download</span>
                                     </a>
                                 </div>

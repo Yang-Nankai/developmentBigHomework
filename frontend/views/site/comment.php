@@ -92,29 +92,7 @@ $this->params['breadcrumbs'][] = $this->title;
                               ]);
                             ?>
                             </div>
-                        <!-- <div class="container comment  m-1 p-0">
-                            <div class=" ml-3 border-left ">
-                                <div class="container ml-2">
-                                    <a class="author">
-                                        <span>王也</span>
-                                        <span class="summary-text small">2020-04-10 16:01:27</span>
-                                    </a>
-                                </div>
-                                <div class="messageText ml-2 container m-2">诸葛青，你败过吗？</div>
-                            </div>
 
-                        </div>
-                        <div class="container comment  m-1 p-0">
-                            <div class=" ml-3 border-left ">
-                                <div class="container ml-2">
-                                    <a class="author">
-                                        <span>冯宝宝</span>
-                                        <span class="summary-text small">2020-04-10 16:01:27</span>
-                                    </a>
-                                </div>
-                                <div class="messageText ml-2 container m-2">他们总说我瓜，其实我一点也不瓜，大多时候我都机智的一批</div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>

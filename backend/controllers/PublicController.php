@@ -2,6 +2,8 @@
 namespace backend\controllers;
 
 use backend\models\LoginForm;
+use backend\models\UploadForm;
+use yii\web\UploadedFile;
 use Yii;
 
 class PublicController extends BaseController
@@ -53,5 +55,9 @@ class PublicController extends BaseController
         $message = Yii::$app->errorHandler->exception->getMessage();
         return $this->render('error', ['message'=>$message]);
     }
+
+
+    
+
 
 }
