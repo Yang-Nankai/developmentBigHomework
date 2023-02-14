@@ -1,8 +1,7 @@
 <?php
 namespace backend\controllers;
 
-use common\models\LoginForm;
-use common\models\UploadForm;
+use backend\models\LoginForm;
 use yii\web\UploadedFile;
 use Yii;
 
