@@ -11,7 +11,7 @@
  Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 14/02/2023 11:10:08
+ Date: 14/02/2023 18:40:15
 */
 
 SET NAMES utf8mb4;
@@ -122,17 +122,17 @@ CREATE TABLE `ym_article`  (
   `updated_at` int(10) NOT NULL DEFAULT 0 COMMENT '更新时间',
   `content` varchar(2000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '文章内容',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '文章主表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '文章主表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of ym_article
 -- ----------------------------
 INSERT INTO `ym_article` VALUES (3, 0, 6, '第一篇文章', 'color:#ff7800;font-weight:bold;font-size:14px;text-decoration:underline;', 'uploads/images/2018-11/4a53834802485f59d8fe6adf6959f2c1.gif', '醉丶春风', '文章内容1', 0, 0, 0, 0, 0, 0, 0, 0, 100, '44', '本站', 'PC端', 1541059376, 1541081319, '乌克兰危机的爆发，“非一朝一夕之故，其所由来者渐矣”。这场危机是各种因素综合作用的结果，也是多年积累矛盾的爆发，但要论这场危机的“始作俑者”，美国难逃其咎。\r\n\r\n　　引发俄乌冲突最直接的原因，是美国主导的北约不断东扩，无视俄罗斯在安全问题上的合理关切，一再挑战俄战略底线。由于自身特殊的地理位置以及与俄罗斯的历史文化渊源，乌克兰成为美国遏制俄罗斯的有力“抓手”，掌控了乌克兰无异于遏制住了俄罗斯的“咽喉”。对俄罗斯而言，如果乌克兰被完全纳入西方阵营，将直接威胁到俄地缘政治安全，这是俄无论如何都不能接受的。俄罗斯一直寻求北约以法律形式保证不再东扩，然而始终被以美国为首的北约无视。俄罗斯总统普京说，30年来俄罗斯一直试图就北约不东扩达成协议，但却受到欺骗、施压和讹诈。');
-INSERT INTO `ym_article` VALUES (5, 0, 0, '俄乌冲突爆发即将一周年，油价因为这些因素又涨了', '', '', 'admin', '在市场预期中国需求复苏，西方对俄石油(3, 0.00, 0.00%)进行制裁，以及俄罗斯减产等因素影响下，近期国际油价攀升。', 0, 0, 1, 0, 1, 0, 0, 0, 100, '油价,俄乌冲突', '外部', 'PC端', 0, 0, '2月8日，美国能源信息署（EIA）发布2月份《短期能源展望》，调高了2023年布伦特原油价格的预测值至83.63美元/桶，此前为83.1美元/桶。EIA也将1月预测的2023年中国的石油消费均值，从1570万桶/日上调至1580万桶/日。\r\n\r\n　　2月5日，欧盟对俄罗斯成品油的进口禁令，以及G7集团与欧盟等国家对俄罗斯成品油出口设置价格上限的政策同时生效。\r\n\r\n　　据彭博社当日报道，高盛(374.02, 2.74, 0.74%)集团在最新的报告中表示，由于制裁可能导致俄罗斯石油出口下降，叠加中国需求恢复，油价将从目前的80美元/桶左右升至100美元/桶以上。\r\n\r\n　　作为对西方实施石油制裁的回应，俄罗斯在2月10日宣布，3月将削减50万桶/日的石油产量。据央视新闻报道，欧佩克+不打算采取行动来弥补俄罗斯的减产。\r\n\r\n　　尽管全球经济仍存在很大不确定性，但在上述多重利多因素下，市场对油价将大幅反弹的预期也在增强。\r\n\r\n　　据《金融时报》2月10日报道，顶尖原油交易员、对冲基金经理PierreAndurand认为，目前市场太过短视，中国的开放将导致石油需求增长远超预期。国际油价将有可能在2023年接下去的时间里达140美元/桶。\r\n\r\n　　下周也将迎来俄乌冲突爆发一周年。\r\n\r\n　　去年2月24日，俄罗斯正式对乌克兰发起特别军事行动。随后，西方国家对俄罗斯的石油进行了多轮制裁。\r\n\r\n　　对俄罗斯石油供应中断的担忧，以及经济前景的不确定性等因素，导致国际油价呈现大起大落的过山车行情。\r\n\r\n　　去年3月2日，布伦特原油价盘中突破110美元/桶；3月7日，布伦特原油5月期货盘中一度升至139美元/桶，WTI原油5月期货接近130美元/桶，均创下2008年以来新高。\r\n\r\n　　伴随着西方国家开始讨论并落地对俄经济制裁政策，国际油价波动剧烈，在去年6月再次突破120美元/桶。\r\n\r\n　　随着市场对经济衰退的担忧，超过了对供应短缺的预期，国际原油开始进入下行通道，并于7月初跌破100美元/桶。\r\n\r\n　　去年12月5日，欧盟针对俄罗斯海运原油的进口禁令，以及G7集团、欧盟与澳大利亚对俄罗斯石油设置60美元/桶的价格上限的政策同时生效。\r\n\r\n　　但上述政策当时暂未导致市场预期中的原油供应短缺，叠加欧佩克减产落空，推动了油价下跌。\r\n\r\n　　当地时间12月6日，WTI即月原油期货结算价在回吐了俄乌冲突的所有涨幅后，跌至年内最低。\r\n\r\n　　截至北京时间2月13日下午18:00，布伦特原油跌1.28%，报85.28美元/桶；WTI 原油跌1.38%，报78.62美元/桶。');
-INSERT INTO `ym_article` VALUES (6, 0, 0, '美恢复在乌“绝密项目” 俄乌冲突或还要两年结束', '', '', 'admin', ' “俄罗斯向乌克兰阐述和谈立场”，今日俄罗斯电视台12日以此为题报道称，俄罗斯副外长韦尔希宁11日表示，俄罗斯已准备好与乌克兰进行无条件谈判。俄媒认为，韦尔希宁此番表态字里行间透露出非常重要的表述和潜台词，准确传达俄方实质立场。', 0, 0, 1, 0, 1, 0, 0, 0, 100, '美国,俄乌冲突', '外部', 'PC端', 0, 0, '韦尔希宁在俄红星电视台11日播出的一档采访节目中表示，所有军事行动都是以谈判结束的，俄罗斯对此也作好了准备，但谈判需要建立在现实情况之上。“俄罗斯准备好通过对话结束冲突，但前提是乌方不能有预设条件，谈判要在既定的现实基础上进行，并考虑到俄方此前提出的目标。”韦尔希宁称，此前在白俄罗斯和土耳其举行的俄乌谈判均因乌方原因中断。他强调，是否与俄方进行谈判并非由乌方决定，而“首先是由华盛顿和布鲁塞尔决定”。\r\n\r\n    据乌克兰国家通讯社11日报道，乌总统办公室顾问波多利亚克当天表示，俄方声明表明，与克里姆林宫的谈判是不可能的。波多利亚克称，只有乌克兰的胜利才能结束“欧洲战争”。他指责俄罗斯“不愿离开它占领的领土，也不愿为这场几乎长达一年的冲突承担责任”。白宫国家安全委员会发言人约翰·柯比同日重申，要由乌总统泽连斯基来决定谈判是否合适，以及何时合适。“华盛顿将继续支持乌克兰，以便他们能够在战场上成功对抗俄罗斯，因为这将使泽连斯基在谈判时‘顺风顺水’”。');
-INSERT INTO `ym_article` VALUES (7, 0, 0, '俄乌冲突清晰地显示 美国操控欧洲木偶大获成功', '', '', 'admin', '俄乌军事冲突到现在已经延宕了将近一年的时间，可以说这场军事冲突很大程度上也改变了世界格局，首当其冲的除了俄乌双方之外就是欧洲。欧洲到底何去何从？在2月13日播出的《这就是中国》节目中，复旦大学中国研究院院长张维为和上海社科院宗教研究所宗教学研究室主任邱文平再次就此展开演讲与讨论。', 0, 0, 1, 0, 1, 0, 0, 0, 100, '美国,俄乌冲突', '外部', 'PC端', 0, 0, '邱文平认为，美国操控欧洲是大获成功的，现在是开始收割胜利果实的时候。我们一直用美西方来指代美欧等发达国家，假设它们是异常团结的，但是俄乌冲突让大家清晰地认识到，美国对欧洲的渗透和控制之深，欧洲几乎成了美国的提线木偶。美国通过冯德莱恩等代理人控制了欧盟委员会和议会，用绿党等各色政治“网红”控制了诸多国家的政局，从政治上绑架、军事上控制、经济上吸血欧洲，操控欧洲的战略目的大获成功。\r\n\r\n面对美国的趁火打劫，老欧洲的反应异常的软弱无力，实在是让人有点出乎意料。法国、德国、西班牙、意大利这些历史上都曾经建立过叱咤风云的世界帝国，被战后长期的太平岁月削弱了意志。在美国的羽翼下日子过得太久，合伙劫掠发展中国家的日子过得太舒服，它们居然忘记了美英这些盎格鲁-撒克逊人的血腥本性。美国的财政赤字已经面临爆点，只有巨量的资本才能填补这个空缺，欧盟实在是再合适不过的收割对象。');
-INSERT INTO `ym_article` VALUES (8, 0, 0, '俄乌冲突终于要结束了？俄方给出最新时间节点，联合国惶恐不安', '', '', 'admin', '据媒体2月8日消息，德国国防部日前在其官方社交媒体账号上宣布，计划在3月底将德国“豹2A6”坦克交付给乌武装部队。据报道，乌克兰国防部长列兹尼科夫当地时间7日在其社交媒体账号上宣布，德国政府已经决定向乌克兰提供“豹-1”坦克。', 0, 0, 1, 0, 1, 0, 0, 0, 100, '俄乌冲突,联合国', '外部', 'PC端', 0, 0, '到今年夏天，乌克兰将有20至25辆这种坦克。到今年年底，大约有80辆。到2024年，将有超过100。此外，乌克兰还将收到14辆“豹2A6”主战坦克。针对西方国家不断拱火搅局，俄罗斯国防部长绍伊古7日表示，西方国家向乌克兰运送武器，实际上是在把北约拖入冲突。\r\n\r\n他警告称，这可能会导致不可预测的升级。此外，车臣共和国领导人卡德罗夫7日表示，到今年年底，特别军事行动将结束。欧洲国家会认识到自己行为的错误，西方会跪地求饶，并且像往常一样，欧洲国家将不得不在所有领域与俄罗斯合作。\r\n\r\n值得一提的是联合国秘书长古特雷斯6日在联大发言谈到俄乌冲突时表示，俄乌冲突和平前景越来越渺茫，我担心世界会陷入更大范围的战争。古特雷斯称，局势进一步升级和流血的可能性不断增加，世界需要遵守联合国宪章和国际法的和平。\r\n\r\n古特雷斯同时指出，拥核国家应避免首先使用核武器。他强调，“我们处于几十年来核战争爆发风险最严重的时刻，不管爆发是有意还是意外，我们都需要结束世界各地所存放的1.3万件核武器所带来的威胁”。');
-INSERT INTO `ym_article` VALUES (9, 0, 0, '俄乌冲突第354天：俄提出准备进行无条件谈判，俄称将从3月减产石油', '', '', 'admin', '俄乌冲突第354天：俄提出准备进行无条件谈判，俄称将从3月减产石油', 0, 0, 1, 0, 1, 0, 0, 0, 100, '俄乌冲突,战争', '外部', 'PC端', 0, 0, '在红利曼方向，中央集群在卢甘斯克地区对乌军造成重创。24小时内，多达120名乌军被消灭，一辆步兵战车、四辆装甲车、1辆‘冰雹’多管火箭炮以及两门D-20榴弹炮被摧毁。\r\n\r\n在顿涅茨克方向，乌军24小时内损失了140多人，另有2辆步兵战车、6辆汽车、2门美国M777火炮、“螃蟹”自行榴弹炮、“风信子-B”、D-30榴弹炮和美制AN/TPQ-50反炮兵雷达以及三个弹药库被摧毁。\r\n\r\n在顿涅茨克南部方向，乌军损失95人，4辆坦克、2辆步兵战车、2辆汽车，以及M109自行火炮，3门D-20榴弹炮、一门“风信子-B”榴弹炮和三座弹药库被摧毁。\r\n\r\n在赫尔松方向，两门“MSTA-B”和D-30榴弹炮被摧毁，乌军弹药库被击中。\r\n\r\n俄陆军航空兵、导弹部队和炮兵对乌军116个人员和军事装备集中区以及92个炮兵阵地进行了火力打击。\r\n\r\n在尼古拉耶夫州，乌军的一套S-300防空导弹系统雷达制导站被摧毁。\r\n\r\n俄防空系统在24小时内摧毁了卢甘斯克、顿涅茨克、扎波罗热和赫尔松地区的19架乌军无人机。\r\n\r\n乌克兰国防部战报：在过去的24小时里，俄军共损失9辆坦克、3辆装甲车、19门身管火炮与火箭炮、61枚巡航导弹、1套防空系统、3套特种装备、27架无人机、8辆各型车辆、以及超过1140名军人。\r\n乌克兰危机的爆发，“非一朝一夕之故，其所由来者渐矣”。这场危机是各种因素综合作用的结果，也是多年积累矛盾的爆发，但要论这场危机的“始作俑者”，美国难逃其咎。\r\n\r\n　　引发俄乌冲突最直接的原因，是美国主导的北约不断东扩，无视俄罗斯在安全问题上的合理关切，一再挑战俄战略底线。由于自身特殊的地理位置以及与俄罗斯的历史文化渊源，乌克兰成为美国遏制俄罗斯的有力“抓手”，掌控了乌克兰无异于遏制住了俄罗斯的“咽喉”。对俄罗斯而言，如果乌克兰被完全纳入西方阵营，将直接威胁到俄地缘政治安全，这是俄无论如何都不能接受的。俄罗斯一直寻求北约以法律形式保证不再东扩，然而始终被以美国为首的北约无视。俄罗斯总统普京说，30年来俄罗斯一直试图就北约不东扩达成协议，但却受到欺骗、施压和讹诈。');
+INSERT INTO `ym_article` VALUES (5, 0, 0, '俄乌冲突爆发即将一周年，油价因为这些因素又涨了', '', '', 'admin', '在市场预期中国需求复苏，西方对俄石油(3, 0.00, 0.00%)进行制裁，以及俄罗斯减产等因素影响下，近期国际油价攀升。', 0, 0, 1, 0, 1, 0, 0, 0, 100, '油价,俄乌冲突', '外部', 'PC端', 1541059376, 1541059376, '2月8日，美国能源信息署（EIA）发布2月份《短期能源展望》，调高了2023年布伦特原油价格的预测值至83.63美元/桶，此前为83.1美元/桶。EIA也将1月预测的2023年中国的石油消费均值，从1570万桶/日上调至1580万桶/日。\r\n\r\n　　2月5日，欧盟对俄罗斯成品油的进口禁令，以及G7集团与欧盟等国家对俄罗斯成品油出口设置价格上限的政策同时生效。\r\n\r\n　　据彭博社当日报道，高盛(374.02, 2.74, 0.74%)集团在最新的报告中表示，由于制裁可能导致俄罗斯石油出口下降，叠加中国需求恢复，油价将从目前的80美元/桶左右升至100美元/桶以上。\r\n\r\n　　作为对西方实施石油制裁的回应，俄罗斯在2月10日宣布，3月将削减50万桶/日的石油产量。据央视新闻报道，欧佩克+不打算采取行动来弥补俄罗斯的减产。\r\n\r\n　　尽管全球经济仍存在很大不确定性，但在上述多重利多因素下，市场对油价将大幅反弹的预期也在增强。\r\n\r\n　　据《金融时报》2月10日报道，顶尖原油交易员、对冲基金经理PierreAndurand认为，目前市场太过短视，中国的开放将导致石油需求增长远超预期。国际油价将有可能在2023年接下去的时间里达140美元/桶。\r\n\r\n　　下周也将迎来俄乌冲突爆发一周年。\r\n\r\n　　去年2月24日，俄罗斯正式对乌克兰发起特别军事行动。随后，西方国家对俄罗斯的石油进行了多轮制裁。\r\n\r\n　　对俄罗斯石油供应中断的担忧，以及经济前景的不确定性等因素，导致国际油价呈现大起大落的过山车行情。\r\n\r\n　　去年3月2日，布伦特原油价盘中突破110美元/桶；3月7日，布伦特原油5月期货盘中一度升至139美元/桶，WTI原油5月期货接近130美元/桶，均创下2008年以来新高。\r\n\r\n　　伴随着西方国家开始讨论并落地对俄经济制裁政策，国际油价波动剧烈，在去年6月再次突破120美元/桶。\r\n\r\n　　随着市场对经济衰退的担忧，超过了对供应短缺的预期，国际原油开始进入下行通道，并于7月初跌破100美元/桶。\r\n\r\n　　去年12月5日，欧盟针对俄罗斯海运原油的进口禁令，以及G7集团、欧盟与澳大利亚对俄罗斯石油设置60美元/桶的价格上限的政策同时生效。\r\n\r\n　　但上述政策当时暂未导致市场预期中的原油供应短缺，叠加欧佩克减产落空，推动了油价下跌。\r\n\r\n　　当地时间12月6日，WTI即月原油期货结算价在回吐了俄乌冲突的所有涨幅后，跌至年内最低。\r\n\r\n　　截至北京时间2月13日下午18:00，布伦特原油跌1.28%，报85.28美元/桶；WTI 原油跌1.38%，报78.62美元/桶。');
+INSERT INTO `ym_article` VALUES (6, 0, 0, '美恢复在乌“绝密项目” 俄乌冲突或还要两年结束', '', '', 'admin', ' “俄罗斯向乌克兰阐述和谈立场”，今日俄罗斯电视台12日以此为题报道称，俄罗斯副外长韦尔希宁11日表示，俄罗斯已准备好与乌克兰进行无条件谈判。俄媒认为，韦尔希宁此番表态字里行间透露出非常重要的表述和潜台词，准确传达俄方实质立场。', 0, 0, 1, 0, 1, 0, 0, 0, 100, '美国,俄乌冲突', '外部', 'PC端', 1541059376, 1541059376, '韦尔希宁在俄红星电视台11日播出的一档采访节目中表示，所有军事行动都是以谈判结束的，俄罗斯对此也作好了准备，但谈判需要建立在现实情况之上。“俄罗斯准备好通过对话结束冲突，但前提是乌方不能有预设条件，谈判要在既定的现实基础上进行，并考虑到俄方此前提出的目标。”韦尔希宁称，此前在白俄罗斯和土耳其举行的俄乌谈判均因乌方原因中断。他强调，是否与俄方进行谈判并非由乌方决定，而“首先是由华盛顿和布鲁塞尔决定”。\r\n\r\n    据乌克兰国家通讯社11日报道，乌总统办公室顾问波多利亚克当天表示，俄方声明表明，与克里姆林宫的谈判是不可能的。波多利亚克称，只有乌克兰的胜利才能结束“欧洲战争”。他指责俄罗斯“不愿离开它占领的领土，也不愿为这场几乎长达一年的冲突承担责任”。白宫国家安全委员会发言人约翰·柯比同日重申，要由乌总统泽连斯基来决定谈判是否合适，以及何时合适。“华盛顿将继续支持乌克兰，以便他们能够在战场上成功对抗俄罗斯，因为这将使泽连斯基在谈判时‘顺风顺水’”。');
+INSERT INTO `ym_article` VALUES (7, 0, 0, '俄乌冲突清晰地显示 美国操控欧洲木偶大获成功', '', '', 'admin', '俄乌军事冲突到现在已经延宕了将近一年的时间，可以说这场军事冲突很大程度上也改变了世界格局，首当其冲的除了俄乌双方之外就是欧洲。欧洲到底何去何从？在2月13日播出的《这就是中国》节目中，复旦大学中国研究院院长张维为和上海社科院宗教研究所宗教学研究室主任邱文平再次就此展开演讲与讨论。', 0, 0, 1, 0, 1, 0, 0, 0, 100, '美国,俄乌冲突', '外部', 'PC端', 1541059376, 1541059376, '邱文平认为，美国操控欧洲是大获成功的，现在是开始收割胜利果实的时候。我们一直用美西方来指代美欧等发达国家，假设它们是异常团结的，但是俄乌冲突让大家清晰地认识到，美国对欧洲的渗透和控制之深，欧洲几乎成了美国的提线木偶。美国通过冯德莱恩等代理人控制了欧盟委员会和议会，用绿党等各色政治“网红”控制了诸多国家的政局，从政治上绑架、军事上控制、经济上吸血欧洲，操控欧洲的战略目的大获成功。\r\n\r\n面对美国的趁火打劫，老欧洲的反应异常的软弱无力，实在是让人有点出乎意料。法国、德国、西班牙、意大利这些历史上都曾经建立过叱咤风云的世界帝国，被战后长期的太平岁月削弱了意志。在美国的羽翼下日子过得太久，合伙劫掠发展中国家的日子过得太舒服，它们居然忘记了美英这些盎格鲁-撒克逊人的血腥本性。美国的财政赤字已经面临爆点，只有巨量的资本才能填补这个空缺，欧盟实在是再合适不过的收割对象。');
+INSERT INTO `ym_article` VALUES (8, 0, 0, '俄乌冲突终于要结束了？俄方给出最新时间节点，联合国惶恐不安', '', '', 'admin', '据媒体2月8日消息，德国国防部日前在其官方社交媒体账号上宣布，计划在3月底将德国“豹2A6”坦克交付给乌武装部队。据报道，乌克兰国防部长列兹尼科夫当地时间7日在其社交媒体账号上宣布，德国政府已经决定向乌克兰提供“豹-1”坦克。', 0, 0, 1, 0, 1, 0, 0, 0, 100, '俄乌冲突,联合国', '外部', 'PC端', 1541059376, 1541059376, '到今年夏天，乌克兰将有20至25辆这种坦克。到今年年底，大约有80辆。到2024年，将有超过100。此外，乌克兰还将收到14辆“豹2A6”主战坦克。针对西方国家不断拱火搅局，俄罗斯国防部长绍伊古7日表示，西方国家向乌克兰运送武器，实际上是在把北约拖入冲突。\r\n\r\n他警告称，这可能会导致不可预测的升级。此外，车臣共和国领导人卡德罗夫7日表示，到今年年底，特别军事行动将结束。欧洲国家会认识到自己行为的错误，西方会跪地求饶，并且像往常一样，欧洲国家将不得不在所有领域与俄罗斯合作。\r\n\r\n值得一提的是联合国秘书长古特雷斯6日在联大发言谈到俄乌冲突时表示，俄乌冲突和平前景越来越渺茫，我担心世界会陷入更大范围的战争。古特雷斯称，局势进一步升级和流血的可能性不断增加，世界需要遵守联合国宪章和国际法的和平。\r\n\r\n古特雷斯同时指出，拥核国家应避免首先使用核武器。他强调，“我们处于几十年来核战争爆发风险最严重的时刻，不管爆发是有意还是意外，我们都需要结束世界各地所存放的1.3万件核武器所带来的威胁”。');
+INSERT INTO `ym_article` VALUES (9, 0, 0, '俄乌冲突第354天：俄提出准备进行无条件谈判，俄称将从3月减产石油', '', '', 'admin', '俄乌冲突第354天：俄提出准备进行无条件谈判，俄称将从3月减产石油', 0, 0, 1, 0, 1, 0, 0, 0, 100, '俄乌冲突,战争', '外部', 'PC端', 1541059376, 1541059376, '在红利曼方向，中央集群在卢甘斯克地区对乌军造成重创。24小时内，多达120名乌军被消灭，一辆步兵战车、四辆装甲车、1辆‘冰雹’多管火箭炮以及两门D-20榴弹炮被摧毁。\r\n\r\n在顿涅茨克方向，乌军24小时内损失了140多人，另有2辆步兵战车、6辆汽车、2门美国M777火炮、“螃蟹”自行榴弹炮、“风信子-B”、D-30榴弹炮和美制AN/TPQ-50反炮兵雷达以及三个弹药库被摧毁。\r\n\r\n在顿涅茨克南部方向，乌军损失95人，4辆坦克、2辆步兵战车、2辆汽车，以及M109自行火炮，3门D-20榴弹炮、一门“风信子-B”榴弹炮和三座弹药库被摧毁。\r\n\r\n在赫尔松方向，两门“MSTA-B”和D-30榴弹炮被摧毁，乌军弹药库被击中。\r\n\r\n俄陆军航空兵、导弹部队和炮兵对乌军116个人员和军事装备集中区以及92个炮兵阵地进行了火力打击。\r\n\r\n在尼古拉耶夫州，乌军的一套S-300防空导弹系统雷达制导站被摧毁。\r\n\r\n俄防空系统在24小时内摧毁了卢甘斯克、顿涅茨克、扎波罗热和赫尔松地区的19架乌军无人机。\r\n\r\n乌克兰国防部战报：在过去的24小时里，俄军共损失9辆坦克、3辆装甲车、19门身管火炮与火箭炮、61枚巡航导弹、1套防空系统、3套特种装备、27架无人机、8辆各型车辆、以及超过1140名军人。\r\n乌克兰危机的爆发，“非一朝一夕之故，其所由来者渐矣”。这场危机是各种因素综合作用的结果，也是多年积累矛盾的爆发，但要论这场危机的“始作俑者”，美国难逃其咎。\r\n\r\n　　引发俄乌冲突最直接的原因，是美国主导的北约不断东扩，无视俄罗斯在安全问题上的合理关切，一再挑战俄战略底线。由于自身特殊的地理位置以及与俄罗斯的历史文化渊源，乌克兰成为美国遏制俄罗斯的有力“抓手”，掌控了乌克兰无异于遏制住了俄罗斯的“咽喉”。对俄罗斯而言，如果乌克兰被完全纳入西方阵营，将直接威胁到俄地缘政治安全，这是俄无论如何都不能接受的。俄罗斯一直寻求北约以法律形式保证不再东扩，然而始终被以美国为首的北约无视。俄罗斯总统普京说，30年来俄罗斯一直试图就北约不东扩达成协议，但却受到欺骗、施压和讹诈。');
 
 -- ----------------------------
 -- Table structure for ym_article_category
@@ -487,7 +487,7 @@ CREATE TABLE `ym_system_log`  (
   `request_method` varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '请求方式',
   `created_at` int(10) NOT NULL DEFAULT 0 COMMENT '创建时间，时间戳',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1282 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '系统日志' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1419 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '系统日志' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of ym_system_log
@@ -839,6 +839,143 @@ INSERT INTO `ym_system_log` VALUES (1278, '', 1, '127.0.0.1', 'ym-article/update
 INSERT INTO `ym_system_log` VALUES (1279, '', 1, '127.0.0.1', 'ym-article/update', '/yii2/backend/web/index.php?r=ym-article%2Fupdate&id=8', '{\"GET\":{\"r\":\"ym-article\\/update\",\"id\":\"8\"},\"POST\":{\"_csrf-backend\":\"6lkLaObWqc0IAtjPUhY26w5Tlo_KS5fl0A8ov9LAc7bYEkoDjbzDvXszuqIFY0yDaDikyIM83Ja2aUzvmKEW2g==\",\"title\":\"\\u4fc4\\u4e4c\\u51b2\\u7a81\\u7ec8\\u4e8e\\u8981\\u7ed3\\u675f\\u4e86\\uff1f\\u4fc4\\u65b9\\u7ed9\\u51fa\\u6700\\u65b0\\u65f6\\u95f4\\u8282\\u70b9\\uff0c\\u8054\\u5408\\u56fd\\u60f6\\u6050\\u4e0d\\u5b89\",\"author\":\"admin\",\"source\":\"\\u5916\\u90e8\",\"keyword\":\"\\u4fc4\\u4e4c\\u51b2\\u7a81,\\u8054\\u5408\\u56fd\",\"is_show\":\"1\",\"is_allow_comment\":\"1\",\"sort_value\":\"100\",\"description\":\"\\u636e\\u5a92\\u4f532\\u67088\\u65e5\\u6d88\\u606f\\uff0c\\u5fb7\\u56fd\\u56fd\\u9632\\u90e8\\u65e5\\u524d\\u5728\\u5176\\u5b98\\u65b9\\u793e\\u4ea4\\u5a92\\u4f53\\u8d26\\u53f7\\u4e0a\\u5ba3\\u5e03\\uff0c\\u8ba1\\u5212\\u57283\\u6708\\u5e95\\u5c06\\u5fb7\\u56fd\\u201c\\u8c792A6\\u201d\\u5766\\u514b\\u4ea4\\u4ed8\\u7ed9\\u4e4c\\u6b66\\u88c5\\u90e8\\u961f\\u3002\\u636e\\u62a5\\u9053\\uff0c\\u4e4c\\u514b\\u5170\\u56fd\\u9632\\u90e8\\u957f\\u5217\\u5179\\u5c3c\\u79d1\\u592b\\u5f53\\u5730\\u65f6\\u95f47\\u65e5\\u5728\\u5176\\u793e\\u4ea4\\u5a92\\u4f53\\u8d26\\u53f7\\u4e0a\\u5ba3\\u5e03\\uff0c\\u5fb7\\u56fd\\u653f\\u5e9c\\u5df2\\u7ecf\\u51b3\\u5b9a\\u5411\\u4e4c\\u514b\\u5170\\u63d0\\u4f9b\\u201c\\u8c79-1\\u201d\\u5766\\u514b\\u3002\",\"content\":\"\\u5230\\u4eca\\u5e74\\u590f\\u5929\\uff0c\\u4e4c\\u514b\\u5170\\u5c06\\u670920\\u81f325\\u8f86\\u8fd9\\u79cd\\u5766\\u514b\\u3002\\u5230\\u4eca\\u5e74\\u5e74\\u5e95\\uff0c\\u5927\\u7ea6\\u670980\\u8f86\\u3002\\u52302024\\u5e74\\uff0c\\u5c06\\u6709\\u8d85\\u8fc7100\\u3002\\u6b64\\u5916\\uff0c\\u4e4c\\u514b\\u5170\\u8fd8\\u5c06\\u6536\\u523014\\u8f86\\u201c\\u8c792A6\\u201d\\u4e3b\\u6218\\u5766\\u514b\\u3002\\u9488\\u5bf9\\u897f\\u65b9\\u56fd\\u5bb6\\u4e0d\\u65ad\\u62f1\\u706b\\u6405\\u5c40\\uff0c\\u4fc4\\u7f57\\u65af\\u56fd\\u9632\\u90e8\\u957f\\u7ecd\\u4f0a\\u53e47\\u65e5\\u8868\\u793a\\uff0c\\u897f\\u65b9\\u56fd\\u5bb6\\u5411\\u4e4c\\u514b\\u5170\\u8fd0\\u9001\\u6b66\\u5668\\uff0c\\u5b9e\\u9645\\u4e0a\\u662f\\u5728\\u628a\\u5317\\u7ea6\\u62d6\\u5165\\u51b2\\u7a81\\u3002\\r\\n\\r\\n\\u4ed6\\u8b66\\u544a\\u79f0\\uff0c\\u8fd9\\u53ef\\u80fd\\u4f1a\\u5bfc\\u81f4\\u4e0d\\u53ef\\u9884\\u6d4b\\u7684\\u5347\\u7ea7\\u3002\\u6b64\\u5916\\uff0c\\u8f66\\u81e3\\u5171\\u548c\\u56fd\\u9886\\u5bfc\\u4eba\\u5361\\u5fb7\\u7f57\\u592b7\\u65e5\\u8868\\u793a\\uff0c\\u5230\\u4eca\\u5e74\\u5e74\\u5e95\\uff0c\\u7279\\u522b\\u519b\\u4e8b\\u884c\\u52a8\\u5c06\\u7ed3\\u675f\\u3002\\u6b27\\u6d32\\u56fd\\u5bb6\\u4f1a\\u8ba4\\u8bc6\\u5230\\u81ea\\u5df1\\u884c\\u4e3a\\u7684\\u9519\\u8bef\\uff0c\\u897f\\u65b9\\u4f1a\\u8dea\\u5730\\u6c42\\u9976\\uff0c\\u5e76\\u4e14\\u50cf\\u5f80\\u5e38\\u4e00\\u6837\\uff0c\\u6b27\\u6d32\\u56fd\\u5bb6\\u5c06\\u4e0d\\u5f97\\u4e0d\\u5728\\u6240\\u6709\\u9886\\u57df\\u4e0e\\u4fc4\\u7f57\\u65af\\u5408\\u4f5c\\u3002\\r\\n\\r\\n\\u503c\\u5f97\\u4e00\\u63d0\\u7684\\u662f\\u8054\\u5408\\u56fd\\u79d8\\u4e66\\u957f\\u53e4\\u7279\\u96f7\\u65af6\\u65e5\\u5728\\u8054\\u5927\\u53d1\\u8a00\\u8c08\\u5230\\u4fc4\\u4e4c\\u51b2\\u7a81\\u65f6\\u8868\\u793a\\uff0c\\u4fc4\\u4e4c\\u51b2\\u7a81\\u548c\\u5e73\\u524d\\u666f\\u8d8a\\u6765\\u8d8a\\u6e3a\\u832b\\uff0c\\u6211\\u62c5\\u5fc3\\u4e16\\u754c\\u4f1a\\u9677\\u5165\\u66f4\\u5927\\u8303\\u56f4\\u7684\\u6218\\u4e89\\u3002\\u53e4\\u7279\\u96f7\\u65af\\u79f0\\uff0c\\u5c40\\u52bf\\u8fdb\\u4e00\\u6b65\\u5347\\u7ea7\\u548c\\u6d41\\u8840\\u7684\\u53ef\\u80fd\\u6027\\u4e0d\\u65ad\\u589e\\u52a0\\uff0c\\u4e16\\u754c\\u9700\\u8981\\u9075\\u5b88\\u8054\\u5408\\u56fd\\u5baa\\u7ae0\\u548c\\u56fd\\u9645\\u6cd5\\u7684\\u548c\\u5e73\\u3002\\r\\n\\r\\n\\u53e4\\u7279\\u96f7\\u65af\\u540c\\u65f6\\u6307\\u51fa\\uff0c\\u62e5\\u6838\\u56fd\\u5bb6\\u5e94\\u907f\\u514d\\u9996\\u5148\\u4f7f\\u7528\\u6838\\u6b66\\u5668\\u3002\\u4ed6\\u5f3a\\u8c03\\uff0c\\u201c\\u6211\\u4eec\\u5904\\u4e8e\\u51e0\\u5341\\u5e74\\u6765\\u6838\\u6218\\u4e89\\u7206\\u53d1\\u98ce\\u9669\\u6700\\u4e25\\u91cd\\u7684\\u65f6\\u523b\\uff0c\\u4e0d\\u7ba1\\u7206\\u53d1\\u662f\\u6709\\u610f\\u8fd8\\u662f\\u610f\\u5916\\uff0c\\u6211\\u4eec\\u90fd\\u9700\\u8981\\u7ed3\\u675f\\u4e16\\u754c\\u5404\\u5730\\u6240\\u5b58\\u653e\\u76841.3\\u4e07\\u4ef6\\u6838\\u6b66\\u5668\\u6240\\u5e26\\u6765\\u7684\\u5a01\\u80c1\\u201d\\u3002\"}}', 'POST', 0);
 INSERT INTO `ym_system_log` VALUES (1280, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex', '{\"GET\":{\"r\":\"ym-article\\/index\"},\"POST\":[]}', 'GET', 0);
 INSERT INTO `ym_system_log` VALUES (1281, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"ym-article\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1282, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1283, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1284, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1285, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1286, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1287, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1288, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1289, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1290, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1291, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1292, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1293, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1294, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1295, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1296, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1297, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1298, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1299, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1300, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1301, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1302, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1303, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1304, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1305, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1306, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1307, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1308, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1309, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1310, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1311, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1312, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1313, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1314, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1315, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1316, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1317, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1318, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1319, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1320, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1321, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1322, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1323, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1324, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1325, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1326, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1327, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1328, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1329, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1330, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1331, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1332, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1333, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1334, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1335, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1336, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1337, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1338, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1339, '', 1, '127.0.0.1', 'public/iframe', '/yii2/backend/web/index.php', '{\"GET\":[],\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1340, '', 1, '127.0.0.1', 'public/console', '/yii2/backend/web/index.php?r=public%2Fconsole', '{\"GET\":{\"r\":\"public\\/console\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1341, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex', '{\"GET\":{\"r\":\"admin\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1342, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"admin\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1343, '', 1, '127.0.0.1', 'role/index', '/yii2/backend/web/index.php?r=role%2Findex', '{\"GET\":{\"r\":\"role\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1344, '', 1, '127.0.0.1', 'role/index', '/yii2/backend/web/index.php?r=role%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"role\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1345, '', 1, '127.0.0.1', 'permission/index', '/yii2/backend/web/index.php?r=permission%2Findex', '{\"GET\":{\"r\":\"permission\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1346, '', 1, '127.0.0.1', 'permission/index', '/yii2/backend/web/index.php?r=permission%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"permission\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1347, '', 1, '127.0.0.1', 'rule/index', '/yii2/backend/web/index.php?r=rule%2Findex', '{\"GET\":{\"r\":\"rule\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1348, '', 1, '127.0.0.1', 'rule/index', '/yii2/backend/web/index.php?r=rule%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"rule\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1349, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex', '{\"GET\":{\"r\":\"ym-article\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1350, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"ym-article\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1351, '', 1, '127.0.0.1', 'public/iframe', '/yii2/backend/web/index.php', '{\"GET\":[],\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1352, '', 1, '127.0.0.1', 'public/console', '/yii2/backend/web/index.php?r=public%2Fconsole', '{\"GET\":{\"r\":\"public\\/console\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1353, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex', '{\"GET\":{\"r\":\"ym-article\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1354, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"ym-article\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1355, '', 1, '127.0.0.1', 'comment/index', '/yii2/backend/web/index.php?r=comment%2Findex', '{\"GET\":{\"r\":\"comment\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1356, '', 1, '127.0.0.1', 'comment/index', '/yii2/backend/web/index.php?r=comment%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"comment\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1357, '', 1, '127.0.0.1', 'user/index', '/yii2/backend/web/index.php?r=user%2Findex', '{\"GET\":{\"r\":\"user\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1358, '', 1, '127.0.0.1', 'user/index', '/yii2/backend/web/index.php?r=user%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"user\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1359, '', 1, '127.0.0.1', 'system-log/index', '/yii2/backend/web/index.php?r=system-log%2Findex', '{\"GET\":{\"r\":\"system-log\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1360, '', 1, '127.0.0.1', 'system-log/index', '/yii2/backend/web/index.php?r=system-log%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"system-log\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1361, '', 1, '127.0.0.1', 'public/iframe', '/yii2/backend/web/index.php', '{\"GET\":[],\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1362, '', 1, '127.0.0.1', 'public/console', '/yii2/backend/web/index.php?r=public%2Fconsole', '{\"GET\":{\"r\":\"public\\/console\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1363, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex', '{\"GET\":{\"r\":\"admin\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1364, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"admin\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1365, '', 1, '127.0.0.1', 'public/logout', '/yii2/backend/web/index.php?r=public%2Flogout', '{\"GET\":{\"r\":\"public\\/logout\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1366, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1367, '', 0, '', '', '', NULL, '', 0);
+INSERT INTO `ym_system_log` VALUES (1368, '', 1, '127.0.0.1', 'public/iframe', '/yii2/backend/web/index.php', '{\"GET\":[],\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1369, '', 1, '127.0.0.1', 'public/console', '/yii2/backend/web/index.php?r=public%2Fconsole', '{\"GET\":{\"r\":\"public\\/console\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1370, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex', '{\"GET\":{\"r\":\"admin\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1371, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"admin\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1372, '', 1, '127.0.0.1', 'role/index', '/yii2/backend/web/index.php?r=role%2Findex', '{\"GET\":{\"r\":\"role\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1373, '', 1, '127.0.0.1', 'role/index', '/yii2/backend/web/index.php?r=role%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"role\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1374, '', 1, '127.0.0.1', 'permission/index', '/yii2/backend/web/index.php?r=permission%2Findex', '{\"GET\":{\"r\":\"permission\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1375, '', 1, '127.0.0.1', 'permission/index', '/yii2/backend/web/index.php?r=permission%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"permission\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1376, '', 1, '127.0.0.1', 'rule/index', '/yii2/backend/web/index.php?r=rule%2Findex', '{\"GET\":{\"r\":\"rule\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1377, '', 1, '127.0.0.1', 'rule/index', '/yii2/backend/web/index.php?r=rule%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"rule\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1378, '', 1, '127.0.0.1', 'user/index', '/yii2/backend/web/index.php?r=user%2Findex', '{\"GET\":{\"r\":\"user\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1379, '', 1, '127.0.0.1', 'user/index', '/yii2/backend/web/index.php?r=user%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"user\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1380, '', 1, '127.0.0.1', 'comment/index', '/yii2/backend/web/index.php?r=comment%2Findex', '{\"GET\":{\"r\":\"comment\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1381, '', 1, '127.0.0.1', 'comment/index', '/yii2/backend/web/index.php?r=comment%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"comment\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1382, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex', '{\"GET\":{\"r\":\"ym-article\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1383, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"ym-article\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1384, '', 1, '127.0.0.1', 'ym-article/update', '/yii2/backend/web/index.php?r=ym-article%2Fupdate&id=3', '{\"GET\":{\"r\":\"ym-article\\/update\",\"id\":\"3\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1385, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex', '{\"GET\":{\"r\":\"ym-article\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1386, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"ym-article\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1387, '', 1, '127.0.0.1', 'system-log/index', '/yii2/backend/web/index.php?r=system-log%2Findex', '{\"GET\":{\"r\":\"system-log\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1388, '', 1, '127.0.0.1', 'system-log/index', '/yii2/backend/web/index.php?r=system-log%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"system-log\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1389, '', 1, '127.0.0.1', 'ym-article/create', '/yii2/backend/web/index.php?r=ym-article%2Fcreate', '{\"GET\":{\"r\":\"ym-article\\/create\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1390, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex', '{\"GET\":{\"r\":\"ym-article\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1391, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"ym-article\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1392, '', 1, '127.0.0.1', 'comment/index', '/yii2/backend/web/index.php?r=comment%2Findex&page=2&limit=10', '{\"GET\":{\"r\":\"comment\\/index\",\"page\":\"2\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1393, '', 1, '127.0.0.1', 'comment/index', '/yii2/backend/web/index.php?r=comment%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"comment\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1394, '', 1, '127.0.0.1', 'comment/index', '/yii2/backend/web/index.php?r=comment%2Findex&page=2&limit=10', '{\"GET\":{\"r\":\"comment\\/index\",\"page\":\"2\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1395, '', 1, '127.0.0.1', 'comment/index', '/yii2/backend/web/index.php?r=comment%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"comment\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1396, '', 1, '127.0.0.1', 'system-log/index', '/yii2/backend/web/index.php?r=system-log%2Findex&page=46&limit=10', '{\"GET\":{\"r\":\"system-log\\/index\",\"page\":\"46\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1397, '', 1, '127.0.0.1', 'system-log/index', '/yii2/backend/web/index.php?r=system-log%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"system-log\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1398, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex', '{\"GET\":{\"r\":\"admin\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1399, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"admin\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1400, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex', '{\"GET\":{\"r\":\"admin\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1401, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"admin\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1402, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex', '{\"GET\":{\"r\":\"ym-article\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1403, '', 1, '127.0.0.1', 'ym-article/index', '/yii2/backend/web/index.php?r=ym-article%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"ym-article\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1404, '', 1, '127.0.0.1', 'system-log/index', '/yii2/backend/web/index.php?r=system-log%2Findex', '{\"GET\":{\"r\":\"system-log\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1405, '', 1, '127.0.0.1', 'system-log/index', '/yii2/backend/web/index.php?r=system-log%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"system-log\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1406, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex', '{\"GET\":{\"r\":\"admin\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1407, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"admin\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1408, '', 1, '127.0.0.1', 'admin/assign', '/yii2/backend/web/index.php?r=admin%2Fassign&id=1', '{\"GET\":{\"r\":\"admin\\/assign\",\"id\":\"1\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1409, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex', '{\"GET\":{\"r\":\"admin\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1410, '', 1, '127.0.0.1', 'admin/index', '/yii2/backend/web/index.php?r=admin%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"admin\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1411, '', 1, '127.0.0.1', 'public/iframe', '/developmentBigHomework/backend/web/index.php', '{\"GET\":[],\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1412, '', 1, '127.0.0.1', 'public/console', '/developmentBigHomework/backend/web/index.php?r=public%2Fconsole', '{\"GET\":{\"r\":\"public\\/console\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1413, '', 1, '127.0.0.1', 'admin/index', '/developmentBigHomework/backend/web/index.php?r=admin%2Findex', '{\"GET\":{\"r\":\"admin\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1414, '', 1, '127.0.0.1', 'admin/index', '/developmentBigHomework/backend/web/index.php?r=admin%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"admin\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1415, '', 1, '127.0.0.1', 'role/index', '/developmentBigHomework/backend/web/index.php?r=role%2Findex', '{\"GET\":{\"r\":\"role\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1416, '', 1, '127.0.0.1', 'permission/index', '/developmentBigHomework/backend/web/index.php?r=permission%2Findex', '{\"GET\":{\"r\":\"permission\\/index\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1417, '', 1, '127.0.0.1', 'permission/index', '/developmentBigHomework/backend/web/index.php?r=permission%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"permission\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
+INSERT INTO `ym_system_log` VALUES (1418, '', 1, '127.0.0.1', 'role/index', '/developmentBigHomework/backend/web/index.php?r=role%2Findex&page=1&limit=10', '{\"GET\":{\"r\":\"role\\/index\",\"page\":\"1\",\"limit\":\"10\"},\"POST\":[]}', 'GET', 0);
 
 -- ----------------------------
 -- Table structure for ym_todolist
@@ -868,6 +1005,26 @@ INSERT INTO `ym_todolist` VALUES (25, 20, '权限节点验证功能', 1, 1540367
 INSERT INTO `ym_todolist` VALUES (26, 20, '添加待办事项功能', 1, 1540367374, 1540367385);
 INSERT INTO `ym_todolist` VALUES (27, 20, '文章管理功能', 1, 1541082993, 1541082994);
 INSERT INTO `ym_todolist` VALUES (28, 20, '前台会员管理', 0, 1541083060, 1541083060);
+
+-- ----------------------------
+-- Table structure for ym_user
+-- ----------------------------
+DROP TABLE IF EXISTS `ym_user`;
+CREATE TABLE `ym_user`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `auth_key` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_hash` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_reset_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT 10,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE INDEX `username`(`username`) USING BTREE,
+  UNIQUE INDEX `email`(`email`) USING BTREE,
+  UNIQUE INDEX `password_reset_token`(`password_reset_token`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for ym_user_comment

@@ -101,55 +101,55 @@ $this->params['breadcrumbs'][] = $this->title;
                                                 <td>我猜你不队_部署文档(2011028_2010349).pdf</td>
                                                 <td>Feb 14, 2023</td>
                                                 <td>杨鑫、孟笑朵</td>
-                                                <td><a href="#" download="我猜你不队_部署文档(2011028_2010349).pdf"
-                                                        class="btn btn-secondary btn-primary-hover"><span>View</span></a>
+                                                <td><a href="data/team/我猜你不队_部署文档(2011028_2010349).pdf" download="我猜你不队_部署文档(2011028_2010349).pdf"
+                                                        class="btn btn-secondary btn-primary-hover"><span>Download</span></a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>我猜你不队_需求文档(2011028_2010349).pdf</td>
                                                 <td>Feb 14, 2023</td>
                                                 <td>杨鑫、孟笑朵</td>
-                                                <td><a href="#" download="我猜你不队_需求文档(2011028_2010349).pdf"
-                                                        class="btn btn-secondary btn-primary-hover"><span>View</span></a>
+                                                <td><a href="data/team/我猜你不队_需求文档(2011028_2010349).pdf" download="我猜你不队_需求文档(2011028_2010349).pdf"
+                                                        class="btn btn-secondary btn-primary-hover"><span>Download</span></a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>我猜你不队_实现文档(2011028_2010349).pdf</td>
                                                 <td>Feb 14, 2023</td>
                                                 <td>杨鑫、孟笑朵</td>
-                                                <td><a href="#" download="我猜你不队_实现文档(2011028_2010349).pdf"
-                                                        class="btn btn-secondary btn-primary-hover"><span>View</span></a>
+                                                <td><a href="data/team/我猜你不队_实现文档(2011028_2010349).pdf" download="我猜你不队_实现文档(2011028_2010349).pdf"
+                                                        class="btn btn-secondary btn-primary-hover"><span>Download</span></a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>我猜你不队_设计文档(2011028_2010349).pdf</td>
                                                 <td>Feb 14, 2023</td>
                                                 <td>杨鑫、孟笑朵</td>
-                                                <td><a href="#" download="我猜你不队_设计文档(2011028_2010349).pdf"
-                                                        class="btn btn-secondary btn-primary-hover"><span>View</span></a>
+                                                <td><a href="data/team/我猜你不队_设计文档(2011028_2010349).pdf" download="我猜你不队_设计文档(2011028_2010349).pdf"
+                                                        class="btn btn-secondary btn-primary-hover"><span>Download</span></a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>我猜你不队_用户手册(2011028_2010349).pdf</td>
                                                 <td>Feb 14, 2023</td>
                                                 <td>杨鑫、孟笑朵</td>
-                                                <td><a href="#" download="我猜你不队_用户手册(2011028_2010349).pdf"
-                                                        class="btn btn-secondary btn-primary-hover"><span>View</span></a>
+                                                <td><a href="data/team/我猜你不队_用户手册(2011028_2010349).pdf" download="我猜你不队_用户手册(2011028_2010349).pdf"
+                                                        class="btn btn-secondary btn-primary-hover"><span>Download</span></a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>我猜你不队_项目展示(2011028_2010349).pptx</td>
                                                 <td>Feb 14, 2023</td>
                                                 <td>杨鑫、孟笑朵</td>
-                                                <td><a href="#" download="我猜你不队_项目展示(2011028_2010349).pptx"
-                                                        class="btn btn-secondary btn-primary-hover"><span>View</span></a>
+                                                <td><a href="data/team/我猜你不队_项目展示(2011028_2010349).pptx" download="我猜你不队_项目展示(2011028_2010349).pptx"
+                                                        class="btn btn-secondary btn-primary-hover"><span>Download</span></a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>我猜你不队_团队作业(2011028_2010349).zip</td>
                                                 <td>Feb 14, 2023</td>
                                                 <td>杨鑫、孟笑朵</td>
-                                                <td><a href="#" download="我猜你不队_团队作业(2011028_2010349).zip"
+                                                <td><a href="data/team/我猜你不队_团队作业(2011028_2010349).zip" download="我猜你不队_团队作业(2011028_2010349).zip"
                                                         class="btn btn-secondary btn-primary-hover"><span>Download</span></a>
                                                 </td>
                                             </tr>
