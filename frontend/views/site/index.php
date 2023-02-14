@@ -101,7 +101,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                 <div class="col-lg-6 col-md-6">
                     <div class="single_banner wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
                         <div class="banner_thumb">
-                            <img src="https://www.reuters.com/graphics/USA-WEATHER/EXPLAINER/jnpwywglapw/cdn/images/share-card.jpg" alt="" style="filter:opacity(0.5);">
+                            <img src="img/others/1.jpg" alt="" style="filter:opacity(0.5);">
                             <div class="banner_text">
                                 <!-- <h3><span>70%</span> Sale Off</h3> -->
                                 <h2>Ukraine <br>
@@ -114,7 +114,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                 <div class="col-lg-6 col-md-6">
                     <div class="single_banner wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
                         <div class="banner_thumb">
-                            <a href="#"><img src="https://www.reuters.com/graphics/BRAZIL-POLITICS/RIOTS/gkplwxqggvb/cdn/images/share-card.jpg" alt="" style="filter:opacity(0.5);"></a>
+                            <a href="#"><img src="img/others/2.jpg" alt="" style="filter:opacity(0.5);"></a>
                             <div class="banner_text">
                                 <!-- <h3><span>25%</span> Sale Off</h3> -->
                                 <h2>Russia <br>
@@ -335,7 +335,7 @@ $this->title = 'Topic – Russia-Ukraine Conflict';
                 <div class="col-lg-4">
                     <div class="single_blog wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
                         <div class="blog_thumb">
-                            <img src="https://www.reuters.com/graphics/UKRAINE-CRISIS/FOOD/zjvqkgomjvx/cdn/images/sharecard.png" alt="">
+                            <img src="img/others/blog.png" alt="">
                         </div>
                         <div class="blog_content">
                             <div class="blog_arrow_btn">
